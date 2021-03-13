@@ -17,50 +17,50 @@ html {
 	--null-label-bg: #FF6464;
 	--null-label-txt: #FFF;
 	--date-txt: #D370E4;
-	--info-txt: #00be4b;
+	--info-txt: #00BE4B;
 	--origin-txt: #008BB5;
-	--keyword-green-txt: #00be4b;
+	--keyword-green-txt: #00BE4B;
 	--keyword-red-txt: #FF3E3E;
 	--highlight-txt: #222;
 	--highlight-bg: #CDE4FA;
 
 	--logLine-border-top: #CCC;
 
-	--errorLine-warnLine-date-txt: #00000080;
+	--errorLine-warnLine-date-txt: rgba(0, 0, 0, 0.50); /* #00000080 */
 	--errorLine-warnLine-txt: #000;
 	--errorLine-warnLine-highlight-txt: #FFF;
-	--errorLine-warnLine-highlight-bg: #00000033;
+	--errorLine-warnLine-highlight-bg: rgba(0, 0, 0, 0.20); /* #00000033 */
 
 	--errorLine-bg: #FF3E3E;
 	--errorLine-txt: #FFF;
-	--errorLine-date-origin-txt: #FFFFFFAA;
+	--errorLine-date-origin-txt: rgba(255, 255, 255, 0.67); /* #FFFFFFAA */
 
 	--warnLine-bg: #FAC613;
 	--warnLine-txt: #222;
 	--warnLine-keyword-green-txt: #438300;
 	--warnLine-highlight-txt: #000;
-	--warnLine-highlight-bg: #FFFFFFAA;
+	--warnLine-highlight-bg: rgba(255, 255, 255, 0.67); /* #FFFFFFAA */
 
-	--modelLine-bg: #bae2ff;
-	--modelLine-date-txt: #00000080;
-	--modelLine-info-txt: #019d2b;
-	--modelLine-keyword-green-txt: #019d2b;
-	--modelLine-highlight-bg: #FFFFFFAA;
+	--modelLine-bg: #BAE2FF;
+	--modelLine-date-txt: rgba(0, 0, 0, 0.50); /* #00000080 */
+	--modelLine-info-txt: #019D2B;
+	--modelLine-keyword-green-txt: #019D2B;
+	--modelLine-highlight-bg: rgba(255, 255, 255, 0.67); /* #FFFFFFAA */
 	
 	--debugLine-txt: #666;
-	--debugLine-bg: #fbcbfe;
-	--debugLine-type-txt: #e50bae;  
-	--debugLine-date-origin-txt: #00000080;
-	--debugLine-info-txt: #019d2b;
-	--debugLine-keyword-green-txt: #019d2b;
+	--debugLine-bg: #FBCBFE;
+	--debugLine-type-txt: #E50BAE;  
+	--debugLine-date-origin-txt: rgba(0, 0, 0, 0.50); /* #00000080 */
+	--debugLine-info-txt: #019D2B;
+	--debugLine-keyword-green-txt: #019D2B;
 	--debugLine-highlight-txt: #222;
-	--debugLine-highlight-bg: #FFFFFFAA;
+	--debugLine-highlight-bg: rgba(255, 255, 255, 0.67); /* #FFFFFFAA */
 
 	--traceLine-txt: #666;
 	--traceLine-bg: #DDD;
 	--traceLine-type-txt: #222;
 	--traceLine-highlight-txt: #000;
-	--traceLine-highlight-bg: #00000020;
+	--traceLine-highlight-bg: rgba(0, 0, 0, 0.13); /* #00000020 */
 	--traceLine-date-origin-txt: #999;
 
 	--lineSelected-txt: #FFF;
@@ -84,6 +84,9 @@ html {
 	--skipped-bg: #DDD;
 
 	--responsive-border-top: #CCC;
+
+	--evenLineBG: #EFEFEF;
+	--oddLineBG: #FFF;
 }
 
 /* DARK THEME */
@@ -102,7 +105,7 @@ html[data-theme="dark"] {
 	--null-label-bg: #FF6464;
 	--null-label-txt: #FFF;
 	--date-txt: #9C80FF;
-	--info-txt: #83ff00;
+	--info-txt: #83FF00;
 	--origin-txt: #2FD1E6;
 	--keyword-green-txt: #9EEF49;
 	--keyword-red-txt: #FF3E3E;
@@ -111,7 +114,7 @@ html[data-theme="dark"] {
 
 	--logLine-border-top: #555;
 
-	--errorLine-warnLine-date-txt: #00000080;
+	--errorLine-warnLine-date-txt: rgba(0, 0, 0, 0.50); /* #00000080 */
 	--errorLine-warnLine-txt: #000;
 	--errorLine-warnLine-highlight-txt: #FFF;
 	--errorLine-warnLine-highlight-bg: #333;
@@ -120,7 +123,7 @@ html[data-theme="dark"] {
 	--modelLine-date-txt: #FFFFFFAA;
 	--modelLine-info-txt: #78E900;
 	--modelLine-keyword-green-txt: #78E900;
-	--modelLine-highlight-bg: #ffffff33;
+	--modelLine-highlight-bg: rgba(255, 255, 255, 0.20); /* #FFFFFF33 */
 
 	--debugLine-txt: #222;
 
@@ -128,7 +131,7 @@ html[data-theme="dark"] {
 	--traceLine-bg: #444;
 	--traceLine-type-txt: #FFF;
 	--traceLine-highlight-txt: #FFF;
-	--traceLine-highlight-bg: #FFFFFF33;
+	--traceLine-highlight-bg: rgba(255, 255, 255, 0.20); /* #FFFFFF33 */
 	--traceLine-date-origin-txt: #999;
 
 	--lineSelected-txt: #222;
@@ -140,18 +143,21 @@ html[data-theme="dark"] {
 	--lineSelected-warn-txt: #DAA60D;
 	--lineSelected-debug-txt: #f883ff;
 	--lineSelected-trace-txt: #444;
-	--lineSelected-info-txt: #44b109;
-	--lineSelected-keyword-green-txt: #44b109;
+	--lineSelected-info-txt: #44B109;
+	--lineSelected-keyword-green-txt: #44B109;
 	--lineSelected-keyword-red-txt: #FF3E3E;
 	--lineSelected-highlight-txt: #FFF;
-	--lineSelected-highlight-bg: #ff52a8;
+	--lineSelected-highlight-bg: #FF52A8;
 	--lineSelected-highlight-error-txt: #FFF;
 	--lineSelected-highlight-error-bg: #FF3E3E;
 
 	--skipped-txt: #A2A2A2;
-	--skipped-bg: #acacac3a;
+	--skipped-bg: rgba(172, 172, 172, 0.23); /* #ACACAC3A */
 
 	--responsive-border-top: #666;
+
+	--evenLineBG: #32332C;
+	--oddLineBG: #282922;
 }
 
 
@@ -648,23 +654,13 @@ body {
 
 /* ========== Option to use background color alternating rows ========== */
 
-/* Light Theme */
-/* .log .line:nth-child(even) {
-	background-color: #EFEFEF;
+/* 
+.log .line:nth-child(even) {
+	background-color: var(--evenLineBG);
 }
 .log .line:nth-child(odd),
 .log .line.logLine {
-	background-color: #FFF;
-} */
-
-
-/* Dark Theme */
-/* .log .line:nth-child(even) {
-	background-color: #32332C;
+	background-color: var(--oddLineBG);
 }
-.log .line:nth-child(odd),
-.log .line.logLine {
-	background-color: #282922;
-} */
-
+*/
 
