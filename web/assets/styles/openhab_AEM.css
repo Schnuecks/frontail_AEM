@@ -1,0 +1,670 @@
+
+/* ============== COLORS ============= */
+
+/* LIGHT THEME */
+html { 
+	--bg: #EFEFEF;
+	--standard-txt: #666;
+	--navbar-bg: #DEDEDE;
+	--navbar-title-txt: #444;
+	--navbar-txt: #888;
+	--navbar-filter-placeholder-txt: #CCC;
+	--navbar-filter-txt: #444;
+	--navbar-btn-bg: #CCC;
+	--navbar-btn-icon-fill: #666;
+	--navbar-btn-pause-pulse-bg: #BBB;
+
+	--null-label-bg: #FF6464;
+	--null-label-txt: #FFF;
+	--date-txt: #D370E4;
+	--info-txt: #00be4b;
+	--origin-txt: #008BB5;
+	--keyword-green-txt: #00be4b;
+	--keyword-red-txt: #FF3E3E;
+	--highlight-txt: #222;
+	--highlight-bg: #CDE4FA;
+
+	--logLine-border-top: #CCC;
+
+	--errorLine-warnLine-date-txt: #00000080;
+	--errorLine-warnLine-txt: #000;
+	--errorLine-warnLine-highlight-txt: #FFF;
+	--errorLine-warnLine-highlight-bg: #00000033;
+
+	--errorLine-bg: #FF3E3E;
+	--errorLine-txt: #FFF;
+	--errorLine-date-origin-txt: #FFFFFFAA;
+
+	--warnLine-bg: #FAC613;
+	--warnLine-txt: #222;
+	--warnLine-keyword-green-txt: #438300;
+	--warnLine-highlight-txt: #000;
+	--warnLine-highlight-bg: #FFFFFFAA;
+
+	--modelLine-bg: #bae2ff;
+	--modelLine-date-txt: #00000080;
+	--modelLine-info-txt: #019d2b;
+	--modelLine-keyword-green-txt: #019d2b;
+	--modelLine-highlight-bg: #FFFFFFAA;
+	
+	--debugLine-txt: #666;
+	--debugLine-bg: #fbcbfe;
+	--debugLine-type-txt: #e50bae;  
+	--debugLine-date-origin-txt: #00000080;
+	--debugLine-info-txt: #019d2b;
+	--debugLine-keyword-green-txt: #019d2b;
+	--debugLine-highlight-txt: #222;
+	--debugLine-highlight-bg: #FFFFFFAA;
+
+	--traceLine-txt: #666;
+	--traceLine-bg: #DDD;
+	--traceLine-type-txt: #222;
+	--traceLine-highlight-txt: #000;
+	--traceLine-highlight-bg: #00000020;
+	--traceLine-date-origin-txt: #999;
+
+	--lineSelected-txt: #FFF;
+	--lineSelected-bg: #232937;
+	--lineSelected-blink-bg: #8C95AA;
+	--lineSelected-date-txt: #F883FF;
+	--lineSelected-origin-txt: #4DCDf4;
+	--lineSelected-error-txt: #FF5454;
+	--lineSelected-warn-txt: #FFC73C;
+	--lineSelected-debug-txt: #F883FF;
+	--lineSelected-trace-txt: #CCC;
+	--lineSelected-info-txt: #00BE4B;
+	--lineSelected-keyword-green-txt: #00BE4B;
+	--lineSelected-keyword-red-txt: #FF3E3E;
+	--lineSelected-highlight-txt: #000;
+	--lineSelected-highlight-bg: #AFDBFF;
+	--lineSelected-highlight-error-txt: #FFF;
+	--lineSelected-highlight-error-bg: #FF3E3E;
+
+	--skipped-txt: #555;
+	--skipped-bg: #DDD;
+
+	--responsive-border-top: #CCC;
+}
+
+/* DARK THEME */
+html[data-theme="dark"] {
+	--bg: #282922;
+	--standard-txt: #999;
+	--navbar-bg: #1A180F;
+	--navbar-title-txt: #AAA;
+	--navbar-txt: #626262;
+	--navbar-filter-placeholder-txt: #555;
+	--navbar-filter-txt: #999;
+	--navbar-btn-bg: #282922;
+	--navbar-btn-icon-fill: #666;
+	--navbar-btn-pause-pulse-bg: #333;
+
+	--null-label-bg: #FF6464;
+	--null-label-txt: #FFF;
+	--date-txt: #9C80FF;
+	--info-txt: #83ff00;
+	--origin-txt: #2FD1E6;
+	--keyword-green-txt: #9EEF49;
+	--keyword-red-txt: #FF3E3E;
+	--highlight-txt: #FFF;
+	--highlight-bg: #FF39AF55;
+
+	--logLine-border-top: #555;
+
+	--errorLine-warnLine-date-txt: #00000080;
+	--errorLine-warnLine-txt: #000;
+	--errorLine-warnLine-highlight-txt: #FFF;
+	--errorLine-warnLine-highlight-bg: #333;
+
+	--modelLine-bg: #035988;
+	--modelLine-date-txt: #FFFFFFAA;
+	--modelLine-info-txt: #78E900;
+	--modelLine-keyword-green-txt: #78E900;
+	--modelLine-highlight-bg: #ffffff33;
+
+	--debugLine-txt: #222;
+
+	--traceLine-txt: #CCC;
+	--traceLine-bg: #444;
+	--traceLine-type-txt: #FFF;
+	--traceLine-highlight-txt: #FFF;
+	--traceLine-highlight-bg: #FFFFFF33;
+	--traceLine-date-origin-txt: #999;
+
+	--lineSelected-txt: #222;
+	--lineSelected-bg: #FFF;
+	--lineSelected-blink-bg: #2F2F2F;
+	--lineSelected-date-txt: #7D219F;
+	--lineSelected-origin-txt: #0596DB;
+	--lineSelected-error-txt: #FF3E3E;
+	--lineSelected-warn-txt: #DAA60D;
+	--lineSelected-debug-txt: #f883ff;
+	--lineSelected-trace-txt: #444;
+	--lineSelected-info-txt: #44b109;
+	--lineSelected-keyword-green-txt: #44b109;
+	--lineSelected-keyword-red-txt: #FF3E3E;
+	--lineSelected-highlight-txt: #FFF;
+	--lineSelected-highlight-bg: #ff52a8;
+	--lineSelected-highlight-error-txt: #FFF;
+	--lineSelected-highlight-error-bg: #FF3E3E;
+
+	--skipped-txt: #A2A2A2;
+	--skipped-bg: #acacac3a;
+
+	--responsive-border-top: #666;
+}
+
+
+
+/* ========== Generic rules ========== */
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+	transition: all 750ms;
+	transition-delay: 0;
+}
+body {
+	background-color:var(--bg);
+	font-size: 14px;
+	padding-top: 90px;
+}
+
+
+
+/* ============= Header ============= */
+
+/* Navbar */
+.navbar {
+	background-color: var(--navbar-bg);
+	border: 0;
+	box-shadow: none; /* serve? */
+}
+.navbar .navbar-text {
+	color: var(--navbar-txt);
+	font-size: 14px;
+}
+.navbar .navbar-text::before {
+	content: "openHAB Log Viewer (frontail)\A";
+	font-size: 21px;
+	white-space: pre;
+	color: var(--navbar-title-txt);
+}
+
+
+/* Filter Input field */
+.navbar input.form-control-sm {
+	color: var(--navbar-filter-txt);
+	background-color: var(--bg);
+	border: 0;
+}
+.navbar input::placeholder {
+	color: var(--navbar-filter-placeholder-txt);
+}
+.navbar input:focus {
+	color: var(--navbar-filter-txt);
+	box-shadow: none;
+	outline: 0;
+	background-color: var(--bg);
+}
+
+
+/* Play/pause and Theme buttons */
+.navbar button.btn-sm {
+	background-color: var(--navbar-btn-bg);
+	border-color: var(--navbar-btn-bg);
+	color: (--bg);
+}
+.navbar button.btn-sm div {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	padding-top: 0.15rem;
+}
+.navbar button.btn-sm svg {
+	position: absolute;
+	display: block;
+	width: 1rem;
+	height: 1rem;
+}
+.navbar button.btn-sm svg#pause,
+.navbar button.btn-sm svg#moon {
+	fill: var(--navbar-btn-icon-fill);
+	opacity: 1;
+}
+.navbar button.btn-sm #play,
+.navbar button.btn-sm #sun {
+	fill: var(--navbar-btn-icon-fill); 
+	opacity: 0;
+}
+.navbar button.btn-sm.play #play,
+.navbar button.btn-sm.dark #sun {
+	opacity: 1;
+}
+.navbar button.btn-sm.play #pause,
+.navbar button.btn-sm.dark #moon {
+	opacity: 0;
+}
+.navbar button.btn-sm #play,
+.navbar button.btn-sm #moon,
+.navbar button.btn-sm #pause,
+.navbar button.btn-sm #sun {
+	transition-property: opacity;
+	transition-duration: 100ms;
+}
+ .navbar button.btn-sm.play {
+	animation: blinking 1s infinite;
+}
+@keyframes blinking {
+	0%, 100%  { opacity: 1; }
+	50%       { opacity: 0.6; }
+}
+
+
+/* ========== Log lines ========== */
+
+/* Generic Log Lines */
+.log {
+	background: inherit;
+	border: 0;
+	font-size: 0.95em;
+	padding: 0;
+	white-space: pre-wrap;
+}
+.log .line {
+	color: var(--standard-txt);
+	font-weight: normal;
+}
+.log .inner-line {
+	font-size: 0.85em;
+	line-height: 1.7em;
+	display: inline-block;
+	padding: 3px 15px;
+	margin-left: 0 !important; /* serve important? */
+	text-indent: 0 !important; /* serve important? */
+	margin-bottom: 0;
+}
+.log .inner-line:empty::after {
+	content: '.';
+	visibility: hidden;
+}
+
+
+
+/* ========== Classes applied by RegEx ========== */
+
+.commError, 
+.null, 
+.undef {
+	color: var(--null-label-txt); 
+	background-color: var(--null-label-bg); 
+}
+.date {
+	color: var(--date-txt);
+}
+.info {
+	color: var(--info-txt);
+}
+.origin, 
+.itemChangedEvent, 
+.thingChangedEvent, 
+.commandEvent {
+	color: var(--origin-txt);
+}
+.keyword {
+	font-weight: bold;
+}
+.keyword.green {
+	color: var(--keyword-green-txt); 
+}
+.keyword.red {
+	color: var(--keyword-red-txt); 
+}
+.highlight {
+	color: var(--highlight-txt);
+	background-color: var(--highlight-bg);
+	font-weight: normal;
+	padding: 0px 3px;
+	border-radius: 3px;
+	display: inline-block;
+}
+.afterFrom,
+.afterTo {
+	color: var(--highlight-txt);
+	font-weight: bold;
+}
+.through,
+.become {
+	color: var(--highlight-txt);
+	font-weight: normal;
+}
+
+
+
+/* ========== Special Lines ========== */
+
+/* .logLine */
+.log .line.logLine {
+	text-align: right; 
+	border-top: 1px solid var(--logLine-border-top); 
+	color: var(--standard-txt);
+}
+
+
+/* .evid (.errorLine + .warnLine) */
+.log .line.evid {
+	padding: 5px 0; 
+	margin: 6px 0 6px 0; 
+	border-radius: 5px;
+}
+.log .line.evid .date, 
+.log .line.evid .origin,
+.log .line.evid .itemChangedEvent, 
+.log .line.evid .thingChangedEvent, 
+.log .line.evid .commandEvent {
+	color: var(--errorLine-warnLine-date-txt);
+}
+.log .line.evid .afterFrom,
+.log .line.evid .afterTo {
+	color: var(--errorLine-warnLine-txt);
+	font-weight: bold;
+}
+.log .line.evid .through,
+.log .line.evid .become {
+	color: var(--errorLine-warnLine-txt);
+	font-weight: normal;
+}
+.log .line.evid .highlight {
+	color: (var(--errorLine-warnLine-highlight-txt));
+	background-color: var(--errorLine-warnLine-highlight-bg);
+}
+
+
+/* .modelLine */
+.log .line.modelLine {
+	color: var(--highlight-txt);
+	background-color: var(--modelLine-bg); 
+	border-radius: 5px;
+	margin: 5px 0;
+}
+.log .line.modelLine .date {
+	color: var(--modelLine-date-txt);
+}
+.log .line.modelLine .origin,
+.log .line.evid .itemChangedEvent, 
+.log .line.evid .thingChangedEvent, 
+.log .line.evid .commandEvent {
+	color: var(--origin-txt);
+}
+.log .line.modelLine .info {
+	color: var(--modelLine-info-txt);
+}
+.log .line.modelLine .green {
+	color: var(--modelLine-keyword-green-txt);
+}
+.log .line.modelLine .highlight {
+	background-color: var(--modelLine-highlight-bg);
+}
+.log .line.modelLine .through,
+.log .line.modelLine .become,
+.log .line.modelLine .afterFrom,
+.log .line.modelLine .afterTo {
+	color: var(--highlight-txt);
+}
+
+
+/* .debugLine */
+.log .line.debugLine {
+	color: var(--debugLine-txt); 
+	background-color: var(--debugLine-bg); 
+	border-radius: 5px;
+	margin: 5px 0;
+}
+.log .line.debugLine .type {
+	color: var(--debugLine-type-txt);
+}
+.log .line.debugLine .date, 
+.log .line.debugLine .origin,
+.log .line.debugLine .itemChangedEvent, 
+.log .line.debugLine .thingChangedEvent, 
+.log .line.debugLine .commandEvent {
+	color: var(--debugLine-date-origin-txt);
+}
+.log .line.debugLine .info {
+	color: var(--debugLine-info-txt);
+}
+.log .line.debugLine .green {
+	color: var(--debugLine-keyword-green-txt);
+}
+.log .line.debugLine .highlight {
+	color: var(--debugLine-highlight-txt);
+	background-color: var(--debugLine-highlight-bg);
+}
+.log .line.debugLine .through,
+.log .line.debugLine .become,
+.log .line.debugLine .afterFrom,
+.log .line.debugLine .afterTo {
+	color: var(--debugLine-highlight-txt);
+}
+
+
+/* .errorLine */
+.log .line.errorLine { 
+	color: var(--errorLine-txt); 
+	background-color: var(--errorLine-bg);
+}
+.log .line.evid.errorLine .type {
+	color: var(--errorLine-txt);
+}
+.log .line.evid.errorLine .date, 
+.log .line.evid.errorLine .origin,
+.log .line.evid.errorLine .itemChangedEvent, 
+.log .line.evid.errorLine .thingChangedEvent, 
+.log .line.evid.errorLine .commandEvent {
+	color: var(--errorLine-date-origin-txt);
+}
+.log .line.evid.errorLine .green, 
+.log .line.evid.errorLine .red {
+	color: var(--errorLine-txt);
+}
+.log .line.evid.errorLine .afterFrom,
+.log .line.evid.errorLine .afterTo,
+.log .line.evid.errorLine .through,
+.log .line.evid.errorLine .become {
+	color: var(--errorLine-txt);
+}
+
+
+/* warnLine */
+.log .line.warnLine {
+	color: var(--warnLine-txt);
+	background-color: var(--warnLine-bg); 
+}
+.log .line.evid.warnLine .type {
+	color: var(--warnLine-txt);
+}
+.log .line.evid.warnLine .green {
+	color: var(--warnLine-keyword-green-txt);
+}
+.log .line.evid.warnLine .highlight {
+	color: var(--warnLine-highlight-txt);
+	background-color: var(--warnLine-highlight-bg);
+}
+.log .line.evid.warnLine .through,
+.log .line.evid.warnLine .become,
+.log .line.evid.warnLine .afterFrom,
+.log .line.evid.warnLine .afterTo {
+	color: var(--warnLine-highlight-txt);
+}
+
+
+/* .traceLine */
+.log .line.traceLine {
+	color: var(--traceLine-txt);
+	background-color: var(--traceLine-bg);
+	border-radius: 5px;
+	margin: 5px 0;
+}
+.log .line.evid.traceLine .type {
+	color: var(--traceLine-type-txt);
+}
+.log .line.traceLine .highlight {
+	color: var(--traceLine-highlight-txt);
+	background-color: var(--traceLine-highlight-bg);
+}
+.log .line.traceLine .date, 
+.log .line.traceLine .origin,
+.log .line.traceLine .itemChangedEvent, 
+.log .line.traceLine .thingChangedEvent, 
+.log .line.traceLine .commandEvent {
+	color: var(--traceLine-date-origin-txt);
+}
+
+
+/* .skippedCountLine */
+.log .line.skippedCountLine .inner-line {
+    padding-left: 5px;
+}
+.log .line.skippedCountLine .skippedCount {
+	display: block;
+	color: var(--skipped-txt);
+	background-color: var(--skipped-bg);
+	border-radius: 5px;
+	padding: 4px 10px;
+    margin: 10px 0;
+	animation: blinkingSkipped 1s infinite;
+}
+@keyframes blinkingSkipped {
+	0%, 100%  { opacity:1; }
+	50%       { opacity:0.7; }
+}
+
+
+
+/* ========== Line selected ========== */
+
+.log .line-selected {
+	color: var(--lineSelected-txt) !important;
+	background-color: var(--lineSelected-bg) !important;
+	animation-timing-function: ease-in-out;
+	animation: bgColor 0.1s 2;
+}
+@keyframes bgColor {
+	0%   { background-color: var(--lineSelected-blink-bg); }
+	100% { background-color: var(--lineSelected-bg); }
+}
+.log .skippedCountLine.line-selected {
+	background-color: var(--bg) !important;
+	animation: none;
+}
+.log .line.line-selected .date {
+	color: var(--lineSelected-date-txt) !important;
+}
+.log .line.line-selected .origin,
+.log .line.line-selected .itemChangedEvent, 
+.log .line.line-selected .thingChangedEvent, 
+.log .line.line-selected .commandEvent {
+	color: var(--lineSelected-origin-txt) !important;
+}
+.log .line.line-selected .error {
+	color: var(--lineSelected-error-txt) !important;
+}
+.log .line.line-selected .warn {
+	color: var(--lineSelected-warn-txt) !important;
+}
+.log .line.line-selected .debug {
+	color: var(--lineSelected-debug-txt) !important;
+}
+.log .line.line-selected .trace {
+	color: var(--lineSelected-trace-txt) !important;
+}
+.log .line.line-selected .info {
+	color: var(--lineSelected-info-txt) !important;
+}
+.log .line.line-selected .green {
+	color: var(--lineSelected-keyword-green-txt) !important;
+}
+.log .line.line-selected .red {
+	color: var(--lineSelected-keyword-red-txt) !important; 
+}
+.log .line.line-selected .highlight {
+	color: var(--lineSelected-highlight-txt) !important;
+	background-color: var(--lineSelected-highlight-bg) !important;
+}
+.log .line.line-selected .highlight.commError, 
+.log .line.line-selected .highlight.null, 
+.log .line.line-selected .highlight.undef {
+    color: var(--lineSelected-highlight-error-txt) !important;
+    background-color: var(--lineSelected-highlight-error-bg) !important;
+}
+.log .line.line-selected .afterFrom,
+.log .line.line-selected .afterTo {
+	color: var(--lineSelected-txt) !important;
+	font-weight: bold;
+}
+.log .line.line-selected .through,
+.log .line.line-selected .become {
+	color: var(--lineSelected-txt) !important;
+}
+
+
+
+/* ========== Media Queries ========== */
+
+@media screen and (max-width: 768px) {
+	.log .line {		
+		padding: 3px 0 7px 0;
+		border-top: 1px solid var(--responsive-border-top);
+	}
+	.log .line.line-selected {		
+		border-top: 1px solid var(--lineSelected-bg);
+	}
+	.log .inner-line {
+		padding: 3px 10px;
+	}
+	.log .line.logLine,
+	.log .line.modelLine,
+	.log .line.debugLine,
+	.log .line.traceLine,
+	.log .line.evid,
+	.log .line.evid.line-selected {		
+		border-top: 0;
+	}
+	.log .line.logLine {
+		border-top: 0;
+		padding-bottom: 35px;
+		text-align: center;
+	}
+	.date {
+		display: inline-block;
+	}
+	.origin {
+		display: inline-block;
+	}
+}
+
+
+
+/* ========== Option to use background color alternating rows ========== */
+
+/* Light Theme */
+/* .log .line:nth-child(even) {
+	background-color: #EFEFEF;
+}
+.log .line:nth-child(odd),
+.log .line.logLine {
+	background-color: #FFF;
+} */
+
+
+/* Dark Theme */
+/* .log .line:nth-child(even) {
+	background-color: #32332C;
+}
+.log .line:nth-child(odd),
+.log .line.logLine {
+	background-color: #282922;
+} */
+
+

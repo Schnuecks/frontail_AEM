@@ -31,13 +31,15 @@ window.App = (function app(window, document) {
    * @type {HTMLElement}
    * @private
    */
-  var _pauseBtn;
+   var _pauseBtn;
+   var _themeBtn;
 
   /**
    * @type {boolean}
    * @private
    */
-  var _isPaused = false;
+   var _isPaused = false;
+   var _isDark = false;
 
   /**
    * @type {number}
@@ -181,6 +183,7 @@ window.App = (function app(window, document) {
    */
   var _highlightWord = function(line) {
     var output = line;
+    var regex;
 
     if (_highlightConfig && _highlightConfig.words) {
       Object.keys(_highlightConfig.words).forEach((wordCheck) => {
@@ -190,6 +193,29 @@ window.App = (function app(window, document) {
         );
       });
     }
+// ----------- ADDED LINES FROM HERE ...  -----------
+    if (_highlightConfig && _highlightConfig.wordsRegExClass) {
+      Object.keys(_highlightConfig.wordsRegExClass).forEach((wordsRegExClassCheck) => {
+        output = output.replace(
+          new RegExp(wordsRegExClassCheck),
+          '<span class="' + _highlightConfig.wordsRegExClass[wordsRegExClassCheck] + '">$&</span>'
+        );
+      });
+    }
+
+    if (_highlightConfig && _highlightConfig.wordsRegExMatchClass) {
+      Object.keys(_highlightConfig.wordsRegExMatchClass).forEach((wordsRegExMatchClassCheck) => {
+        regex = new RegExp(wordsRegExMatchClassCheck);
+        if(regex.test(output)) {
+          // console.log('PASSED: ' + output);
+          output = output.replace(
+            output.match(regex)[1],
+            '<span class="' + _highlightConfig.wordsRegExMatchClass[wordsRegExMatchClassCheck] + '">$&</span>'
+          );
+        }
+      });
+    }
+// ----------- ... TO HERE ----------------------
 
     return output;
   };
@@ -202,7 +228,10 @@ window.App = (function app(window, document) {
     if (_highlightConfig && _highlightConfig.lines) {
       Object.keys(_highlightConfig.lines).forEach((lineCheck) => {
         if (line.indexOf(lineCheck) !== -1) {
-          container.setAttribute('style', _highlightConfig.lines[lineCheck]);
+// ----------- REPLACED THIS LINE: ---------------
+         // container.setAttribute('style', _highlightConfig.lines[lineCheck]);
+// ----------- WITH THIS LINE: -------------------
+         container.setAttribute('class', _highlightConfig.lines[lineCheck]);
         }
       });
     }
@@ -218,12 +247,14 @@ window.App = (function app(window, document) {
      */
     init: function init(opts) {
       var self = this;
+      var retrievedTheme = localStorage.getItem('theme'); // retrieve the theme (if stored)
 
       // Elements
       _logContainer = opts.container;
       _filterInput = opts.filterInput;
       _filterInput.focus();
       _pauseBtn = opts.pauseBtn;
+      _themeBtn = opts.themeBtn;
       _topbar = opts.topbar;
       _body = opts.body;
 
@@ -252,6 +283,41 @@ window.App = (function app(window, document) {
           this.classList.remove('play');
         }
       });
+
+// ----------- ADDED LINES FROM HERE ... --------------
+      document.documentElement.setAttribute('data-theme', retrievedTheme)
+      if (retrievedTheme === 'dark' ) {
+        _themeBtn.classList.add('dark');
+        _isDark = true;
+      } else {
+        _themeBtn.classList.remove('dark');
+        _isDark = false;
+      }
+      // console.log('THEME RETRIEVED: ' + retrievedTheme);
+
+      let trans = () => {
+        document.documentElement.classList.add('transition');
+        window.setTimeout(() => {
+            document.documentElement.classList.remove('transition')
+        }, 1000)
+      };
+
+      _themeBtn.addEventListener('mouseup', function() {
+        _isDark = !_isDark;
+        // console.log('I have set _isDark to: ' + _isDark)
+        if(_isDark) {
+          trans()
+          document.documentElement.setAttribute('data-theme', 'dark')
+          this.classList.add('dark');
+          localStorage.setItem('theme', 'dark'); // store the theme
+        } else {
+          trans()
+          document.documentElement.setAttribute('data-theme', 'light')
+          this.classList.remove('dark');
+          localStorage.setItem('theme', 'light'); // store the theme
+        }
+      });
+// ----------- ... TO HERE ----------------------
 
       // Favicon counter bind
       window.addEventListener(
@@ -289,7 +355,10 @@ window.App = (function app(window, document) {
         .on('line', function(line) {
           if (_isPaused) {
             _skipCounter += 1;
-            self.log('==> SKIPPED: ' + _skipCounter + ' <==', (_skipCounter > 1));
+// ----------- REPLACED THIS LINE: -----------------
+            // self.log('==> SKIPPED: ' + _skipCounter + ' <==', (_skipCounter > 1));
+// ----------- WITH THIS LINE: ---------------------
+            self.log('SKIPPED: ' + _skipCounter, (_skipCounter > 1));
           } else {
             self.log(line);
           }
@@ -316,11 +385,14 @@ window.App = (function app(window, document) {
       div.className = 'line';
       div = _highlightLine(data, div);
       div.addEventListener('click', function click() {
-        if (this.className.indexOf('selected') === -1) {
-          this.className = 'line-selected';
-        } else {
-          this.className = 'line';
-        }
+// ----------- REPLACED THESE LINES: --------------------
+        // if (this.className.indexOf('selected') === -1) {
+        //   this.className = 'line-selected';
+        // } else {
+        //   this.className = 'line';
+        // }
+// ----------- WITH THIS LINE: --------------------------
+        this.classList.toggle("line-selected");
       });
 
       div.appendChild(p);
