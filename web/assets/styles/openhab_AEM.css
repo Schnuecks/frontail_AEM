@@ -2,10 +2,9 @@
 /* ============== COLORS ============= */
 
 /* LIGHT THEME */
-html { 
+html {
 	--bg: #EFEFEF;
 	--standard-txt: #666;
-
 	--navbar-bg: #DEDEDE;
 	--navbar-title-txt: #444;
 	--navbar-txt: #888;
@@ -18,56 +17,57 @@ html {
 	--null-label-bg: #FF6464;
 	--null-label-txt: #FFF;
 	--date-txt: #D370E4;
-	--info-txt: #00BE4B;
+	--info-txt: #00be4b;
 	--origin-txt: #008BB5;
-	--keyword-green-txt: #00BE4B;
+	--keyword-green-txt: #00be4b;
 	--keyword-red-txt: #FF3E3E;
 	--highlight-txt: #222;
 	--highlight-bg: #CDE4FA;
 
 	--logLine-border-top: #CCC;
 
-	--errorLine-warnLine-date-txt: #816511;
+	--errorLine-warnLine-date-txt: #00000080;
 	--errorLine-warnLine-txt: #000;
 	--errorLine-warnLine-highlight-txt: #FFF;
-	--errorLine-warnLine-highlight-bg: #D4201F;
+	--errorLine-warnLine-highlight-bg: #00000033;
+
 	--errorLine-bg: #FF3E3E;
 	--errorLine-txt: #FFF;
-	--errorLine-date-origin-txt: #FBBFBE;
+	--errorLine-date-origin-txt: #FFFFFFAA;
 
 	--warnLine-bg: #FAC613;
 	--warnLine-txt: #222;
 	--warnLine-keyword-green-txt: #438300;
 	--warnLine-highlight-txt: #000;
-	--warnLine-highlight-bg: #FEEDBC;
+	--warnLine-highlight-bg: #FFFFFFAA;
 
-	--modelLine-bg: #BAE2FF;
-	--modelLine-date-txt: #5D717F;
-	--modelLine-info-txt: #019D2B;
-	--modelLine-keyword-green-txt: #019D2B;
-	--modelLine-highlight-bg: #E9f5FF;
+	--modelLine-bg: #bae2ff;
+	--modelLine-date-txt: #00000080;
+	--modelLine-info-txt: #019d2b;
+	--modelLine-keyword-green-txt: #019d2b;
+	--modelLine-highlight-bg: #FFFFFFAA;
 
 	--debugLine-txt: #666;
-	--debugLine-bg: #FBCBFE;
-	--debugLine-type-txt: #E50BAE;
-	--debugLine-date-origin-txt: #7C667E;
-	--debugLine-info-txt: #019D2B;
-	--debugLine-keyword-green-txt: #019D2B;
+	--debugLine-bg: #fbcbfe;
+	--debugLine-type-txt: #e50bae;
+	--debugLine-date-origin-txt: #00000080;
+	--debugLine-info-txt: #019d2b;
+	--debugLine-keyword-green-txt: #019d2b;
 	--debugLine-highlight-txt: #222;
-	--debugLine-highlight-bg: #FEEDFF;
+	--debugLine-highlight-bg: #FFFFFFAA;
 
 	--traceLine-txt: #666;
 	--traceLine-bg: #DDD;
 	--traceLine-type-txt: #222;
 	--traceLine-highlight-txt: #000;
-	--traceLine-highlight-bg: #C1C1C1;
+	--traceLine-highlight-bg: #00000020;
 	--traceLine-date-origin-txt: #999;
 
 	--lineSelected-txt: #FFF;
 	--lineSelected-bg: #232937;
 	--lineSelected-blink-bg: #8C95AA;
 	--lineSelected-date-txt: #F883FF;
-	--lineSelected-origin-txt: #4DCDF4;
+	--lineSelected-origin-txt: #4DCDf4;
 	--lineSelected-error-txt: #FF5454;
 	--lineSelected-warn-txt: #FFC73C;
 	--lineSelected-debug-txt: #F883FF;
@@ -84,9 +84,6 @@ html {
 	--skipped-bg: #DDD;
 
 	--responsive-border-top: #CCC;
-
-	--evenLineBG: #EFEFEF;
-	--oddLineBG: #FFF;
 }
 
 /* DARK THEME */
@@ -105,25 +102,25 @@ html[data-theme="dark"] {
 	--null-label-bg: #FF6464;
 	--null-label-txt: #FFF;
 	--date-txt: #9C80FF;
-	--info-txt: #83FF00;
+	--info-txt: #83ff00;
 	--origin-txt: #2FD1E6;
 	--keyword-green-txt: #9EEF49;
 	--keyword-red-txt: #FF3E3E;
 	--highlight-txt: #FFF;
-	--highlight-bg: #713151;
+	--highlight-bg: #FF39AF55;
 
 	--logLine-border-top: #555;
 
-	--errorLine-warnLine-date-txt: #8C7325;
+	--errorLine-warnLine-date-txt: #00000080;
 	--errorLine-warnLine-txt: #000;
 	--errorLine-warnLine-highlight-txt: #FFF;
-	--errorLine-warnLine-highlight-bg: #BD2E2E;
+	--errorLine-warnLine-highlight-bg: #333;
 
 	--modelLine-bg: #035988;
-	--modelLine-date-txt: #AEC4D4;
+	--modelLine-date-txt: #FFFFFFAA;
 	--modelLine-info-txt: #78E900;
 	--modelLine-keyword-green-txt: #78E900;
-	--modelLine-highlight-bg: #457AA0;
+	--modelLine-highlight-bg: #ffffff33;
 
 	--debugLine-txt: #222;
 
@@ -131,7 +128,7 @@ html[data-theme="dark"] {
 	--traceLine-bg: #444;
 	--traceLine-type-txt: #FFF;
 	--traceLine-highlight-txt: #FFF;
-	--traceLine-highlight-bg: #696969;
+	--traceLine-highlight-bg: #FFFFFF33;
 	--traceLine-date-origin-txt: #999;
 
 	--lineSelected-txt: #222;
@@ -141,23 +138,20 @@ html[data-theme="dark"] {
 	--lineSelected-origin-txt: #0596DB;
 	--lineSelected-error-txt: #FF3E3E;
 	--lineSelected-warn-txt: #DAA60D;
-	--lineSelected-debug-txt: #F883FF;
+	--lineSelected-debug-txt: #f883ff;
 	--lineSelected-trace-txt: #444;
 	--lineSelected-info-txt: #44b109;
-	--lineSelected-keyword-green-txt: #44B109;
+	--lineSelected-keyword-green-txt: #44b109;
 	--lineSelected-keyword-red-txt: #FF3E3E;
 	--lineSelected-highlight-txt: #FFF;
-	--lineSelected-highlight-bg: #FF52A8;
+	--lineSelected-highlight-bg: #ff52a8;
 	--lineSelected-highlight-error-txt: #FFF;
 	--lineSelected-highlight-error-bg: #FF3E3E;
 
 	--skipped-txt: #A2A2A2;
-	--skipped-bg: #44453F;
+	--skipped-bg: #acacac3a;
 
 	--responsive-border-top: #666;
-
-	--evenLineBG: #32332C;
-	--oddLineBG: #282922;
 }
 
 
@@ -241,7 +235,7 @@ body {
 }
 .navbar button.btn-sm #play,
 .navbar button.btn-sm #sun {
-	fill: var(--navbar-btn-icon-fill); 
+	fill: var(--navbar-btn-icon-fill);
 	opacity: 0;
 }
 .navbar button.btn-sm.play #play,
@@ -300,11 +294,11 @@ body {
 
 /* ========== Classes applied by RegEx ========== */
 
-.commError, 
-.null, 
+.commError,
+.null,
 .undef {
-	color: var(--null-label-txt); 
-	background-color: var(--null-label-bg); 
+	color: var(--null-label-txt);
+	background-color: var(--null-label-bg);
 }
 .date {
 	color: var(--date-txt);
@@ -312,9 +306,9 @@ body {
 .info {
 	color: var(--info-txt);
 }
-.origin, 
-.itemChangedEvent, 
-.thingChangedEvent, 
+.origin,
+.itemChangedEvent,
+.thingChangedEvent,
 .commandEvent {
 	color: var(--origin-txt);
 }
@@ -322,10 +316,10 @@ body {
 	font-weight: bold;
 }
 .keyword.green {
-	color: var(--keyword-green-txt); 
+	color: var(--keyword-green-txt);
 }
 .keyword.red {
-	color: var(--keyword-red-txt); 
+	color: var(--keyword-red-txt);
 }
 .highlight {
 	color: var(--highlight-txt);
@@ -352,22 +346,22 @@ body {
 
 /* .logLine */
 .log .line.logLine {
-	text-align: right; 
-	border-top: 1px solid var(--logLine-border-top); 
+	text-align: right;
+	border-top: 1px solid var(--logLine-border-top);
 	color: var(--standard-txt);
 }
 
 
 /* .evid (.errorLine + .warnLine) */
 .log .line.evid {
-	padding: 5px 0; 
-	margin: 6px 0 6px 0; 
+	padding: 5px 0;
+	margin: 6px 0 6px 0;
 	border-radius: 5px;
 }
-.log .line.evid .date, 
+.log .line.evid .date,
 .log .line.evid .origin,
-.log .line.evid .itemChangedEvent, 
-.log .line.evid .thingChangedEvent, 
+.log .line.evid .itemChangedEvent,
+.log .line.evid .thingChangedEvent,
 .log .line.evid .commandEvent {
 	color: var(--errorLine-warnLine-date-txt);
 }
@@ -382,7 +376,7 @@ body {
 	font-weight: normal;
 }
 .log .line.evid .highlight {
-	color: var(--errorLine-warnLine-highlight-txt);
+	color: (var(--errorLine-warnLine-highlight-txt));
 	background-color: var(--errorLine-warnLine-highlight-bg);
 }
 
@@ -390,7 +384,7 @@ body {
 /* .modelLine */
 .log .line.modelLine {
 	color: var(--highlight-txt);
-	background-color: var(--modelLine-bg); 
+	background-color: var(--modelLine-bg);
 	border-radius: 5px;
 	margin: 5px 0;
 }
@@ -398,8 +392,8 @@ body {
 	color: var(--modelLine-date-txt);
 }
 .log .line.modelLine .origin,
-.log .line.evid .itemChangedEvent, 
-.log .line.evid .thingChangedEvent, 
+.log .line.evid .itemChangedEvent,
+.log .line.evid .thingChangedEvent,
 .log .line.evid .commandEvent {
 	color: var(--origin-txt);
 }
@@ -422,18 +416,18 @@ body {
 
 /* .debugLine */
 .log .line.debugLine {
-	color: var(--debugLine-txt); 
-	background-color: var(--debugLine-bg); 
+	color: var(--debugLine-txt);
+	background-color: var(--debugLine-bg);
 	border-radius: 5px;
 	margin: 5px 0;
 }
 .log .line.debugLine .type {
 	color: var(--debugLine-type-txt);
 }
-.log .line.debugLine .date, 
+.log .line.debugLine .date,
 .log .line.debugLine .origin,
-.log .line.debugLine .itemChangedEvent, 
-.log .line.debugLine .thingChangedEvent, 
+.log .line.debugLine .itemChangedEvent,
+.log .line.debugLine .thingChangedEvent,
 .log .line.debugLine .commandEvent {
 	color: var(--debugLine-date-origin-txt);
 }
@@ -456,21 +450,21 @@ body {
 
 
 /* .errorLine */
-.log .line.errorLine { 
-	color: var(--errorLine-txt); 
+.log .line.errorLine {
+	color: var(--errorLine-txt);
 	background-color: var(--errorLine-bg);
 }
 .log .line.evid.errorLine .type {
 	color: var(--errorLine-txt);
 }
-.log .line.evid.errorLine .date, 
+.log .line.evid.errorLine .date,
 .log .line.evid.errorLine .origin,
-.log .line.evid.errorLine .itemChangedEvent, 
-.log .line.evid.errorLine .thingChangedEvent, 
+.log .line.evid.errorLine .itemChangedEvent,
+.log .line.evid.errorLine .thingChangedEvent,
 .log .line.evid.errorLine .commandEvent {
 	color: var(--errorLine-date-origin-txt);
 }
-.log .line.evid.errorLine .green, 
+.log .line.evid.errorLine .green,
 .log .line.evid.errorLine .red {
 	color: var(--errorLine-txt);
 }
@@ -485,7 +479,7 @@ body {
 /* warnLine */
 .log .line.warnLine {
 	color: var(--warnLine-txt);
-	background-color: var(--warnLine-bg); 
+	background-color: var(--warnLine-bg);
 }
 .log .line.evid.warnLine .type {
 	color: var(--warnLine-txt);
@@ -519,10 +513,10 @@ body {
 	color: var(--traceLine-highlight-txt);
 	background-color: var(--traceLine-highlight-bg);
 }
-.log .line.traceLine .date, 
+.log .line.traceLine .date,
 .log .line.traceLine .origin,
-.log .line.traceLine .itemChangedEvent, 
-.log .line.traceLine .thingChangedEvent, 
+.log .line.traceLine .itemChangedEvent,
+.log .line.traceLine .thingChangedEvent,
 .log .line.traceLine .commandEvent {
 	color: var(--traceLine-date-origin-txt);
 }
@@ -568,8 +562,8 @@ body {
 	color: var(--lineSelected-date-txt) !important;
 }
 .log .line.line-selected .origin,
-.log .line.line-selected .itemChangedEvent, 
-.log .line.line-selected .thingChangedEvent, 
+.log .line.line-selected .itemChangedEvent,
+.log .line.line-selected .thingChangedEvent,
 .log .line.line-selected .commandEvent {
 	color: var(--lineSelected-origin-txt) !important;
 }
@@ -592,14 +586,14 @@ body {
 	color: var(--lineSelected-keyword-green-txt) !important;
 }
 .log .line.line-selected .red {
-	color: var(--lineSelected-keyword-red-txt) !important; 
+	color: var(--lineSelected-keyword-red-txt) !important;
 }
 .log .line.line-selected .highlight {
 	color: var(--lineSelected-highlight-txt) !important;
 	background-color: var(--lineSelected-highlight-bg) !important;
 }
-.log .line.line-selected .highlight.commError, 
-.log .line.line-selected .highlight.null, 
+.log .line.line-selected .highlight.commError,
+.log .line.line-selected .highlight.null,
 .log .line.line-selected .highlight.undef {
     color: var(--lineSelected-highlight-error-txt) !important;
     background-color: var(--lineSelected-highlight-error-bg) !important;
@@ -619,11 +613,11 @@ body {
 /* ========== Media Queries ========== */
 
 @media screen and (max-width: 768px) {
-	.log .line {		
+	.log .line {
 		padding: 3px 0 7px 0;
 		border-top: 1px solid var(--responsive-border-top);
 	}
-	.log .line.line-selected {		
+	.log .line.line-selected {
 		border-top: 1px solid var(--lineSelected-bg);
 	}
 	.log .inner-line {
@@ -634,7 +628,7 @@ body {
 	.log .line.debugLine,
 	.log .line.traceLine,
 	.log .line.evid,
-	.log .line.evid.line-selected {		
+	.log .line.evid.line-selected {
 		border-top: 0;
 	}
 	.log .line.logLine {
@@ -654,14 +648,21 @@ body {
 
 /* ========== Option to use background color alternating rows ========== */
 
-/* 
-.log .line:nth-child(even) {
-	background-color: var(--evenLineBG);
+/* Light Theme */
+/* .log .line:nth-child(even) {
+	background-color: #EFEFEF;
 }
 .log .line:nth-child(odd),
 .log .line.logLine {
-	background-color: var(--oddLineBG);
+	background-color: #FFF;
+} */
+
+
+/* Dark Theme */
+/* .log .line:nth-child(even) {
+	background-color: #32332C;
 }
-*/
-
-
+.log .line:nth-child(odd),
+.log .line.logLine {
+	background-color: #282922;
+} */
