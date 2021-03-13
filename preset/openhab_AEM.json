@@ -39,6 +39,7 @@
   },
   "wordsRegExMatchClass": {
     "Item '(.*?)'": "highlight",
+    "model '(.*?)'": "highlight",
     "through (.*)": "highlight",
     "through</span> (.*)": "highlight",
     "from(\\s.*?) to": "afterFrom",
