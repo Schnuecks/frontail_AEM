@@ -5,6 +5,7 @@
 html { 
 	--bg: #EFEFEF;
 	--standard-txt: #666;
+
 	--navbar-bg: #DEDEDE;
 	--navbar-title-txt: #444;
 	--navbar-txt: #888;
@@ -26,48 +27,47 @@ html {
 
 	--logLine-border-top: #CCC;
 
-	--errorLine-warnLine-date-txt: rgba(0, 0, 0, 0.50); /* #00000080 */
+	--errorLine-warnLine-date-txt: #816511;
 	--errorLine-warnLine-txt: #000;
 	--errorLine-warnLine-highlight-txt: #FFF;
-	--errorLine-warnLine-highlight-bg: rgba(0, 0, 0, 0.20); /* #00000033 */
-
+	--errorLine-warnLine-highlight-bg: #D4201F;
 	--errorLine-bg: #FF3E3E;
 	--errorLine-txt: #FFF;
-	--errorLine-date-origin-txt: rgba(255, 255, 255, 0.67); /* #FFFFFFAA */
+	--errorLine-date-origin-txt: #FBBFBE;
 
 	--warnLine-bg: #FAC613;
 	--warnLine-txt: #222;
 	--warnLine-keyword-green-txt: #438300;
 	--warnLine-highlight-txt: #000;
-	--warnLine-highlight-bg: rgba(255, 255, 255, 0.67); /* #FFFFFFAA */
+	--warnLine-highlight-bg: #FEEDBC;
 
 	--modelLine-bg: #BAE2FF;
-	--modelLine-date-txt: rgba(0, 0, 0, 0.50); /* #00000080 */
+	--modelLine-date-txt: #5D717F;
 	--modelLine-info-txt: #019D2B;
 	--modelLine-keyword-green-txt: #019D2B;
-	--modelLine-highlight-bg: rgba(255, 255, 255, 0.67); /* #FFFFFFAA */
-	
+	--modelLine-highlight-bg: #E9f5FF;
+
 	--debugLine-txt: #666;
 	--debugLine-bg: #FBCBFE;
-	--debugLine-type-txt: #E50BAE;  
-	--debugLine-date-origin-txt: rgba(0, 0, 0, 0.50); /* #00000080 */
+	--debugLine-type-txt: #E50BAE;
+	--debugLine-date-origin-txt: #7C667E;
 	--debugLine-info-txt: #019D2B;
 	--debugLine-keyword-green-txt: #019D2B;
 	--debugLine-highlight-txt: #222;
-	--debugLine-highlight-bg: rgba(255, 255, 255, 0.67); /* #FFFFFFAA */
+	--debugLine-highlight-bg: #FEEDFF;
 
 	--traceLine-txt: #666;
 	--traceLine-bg: #DDD;
 	--traceLine-type-txt: #222;
 	--traceLine-highlight-txt: #000;
-	--traceLine-highlight-bg: rgba(0, 0, 0, 0.13); /* #00000020 */
+	--traceLine-highlight-bg: #C1C1C1;
 	--traceLine-date-origin-txt: #999;
 
 	--lineSelected-txt: #FFF;
 	--lineSelected-bg: #232937;
 	--lineSelected-blink-bg: #8C95AA;
 	--lineSelected-date-txt: #F883FF;
-	--lineSelected-origin-txt: #4DCDf4;
+	--lineSelected-origin-txt: #4DCDF4;
 	--lineSelected-error-txt: #FF5454;
 	--lineSelected-warn-txt: #FFC73C;
 	--lineSelected-debug-txt: #F883FF;
@@ -110,20 +110,20 @@ html[data-theme="dark"] {
 	--keyword-green-txt: #9EEF49;
 	--keyword-red-txt: #FF3E3E;
 	--highlight-txt: #FFF;
-	--highlight-bg: #FF39AF55;
+	--highlight-bg: #713151;
 
 	--logLine-border-top: #555;
 
-	--errorLine-warnLine-date-txt: rgba(0, 0, 0, 0.50); /* #00000080 */
+	--errorLine-warnLine-date-txt: #8C7325;
 	--errorLine-warnLine-txt: #000;
 	--errorLine-warnLine-highlight-txt: #FFF;
-	--errorLine-warnLine-highlight-bg: #333;
+	--errorLine-warnLine-highlight-bg: #BD2E2E;
 
 	--modelLine-bg: #035988;
-	--modelLine-date-txt: #FFFFFFAA;
+	--modelLine-date-txt: #AEC4D4;
 	--modelLine-info-txt: #78E900;
 	--modelLine-keyword-green-txt: #78E900;
-	--modelLine-highlight-bg: rgba(255, 255, 255, 0.20); /* #FFFFFF33 */
+	--modelLine-highlight-bg: #457AA0;
 
 	--debugLine-txt: #222;
 
@@ -131,7 +131,7 @@ html[data-theme="dark"] {
 	--traceLine-bg: #444;
 	--traceLine-type-txt: #FFF;
 	--traceLine-highlight-txt: #FFF;
-	--traceLine-highlight-bg: rgba(255, 255, 255, 0.20); /* #FFFFFF33 */
+	--traceLine-highlight-bg: #696969;
 	--traceLine-date-origin-txt: #999;
 
 	--lineSelected-txt: #222;
@@ -141,9 +141,9 @@ html[data-theme="dark"] {
 	--lineSelected-origin-txt: #0596DB;
 	--lineSelected-error-txt: #FF3E3E;
 	--lineSelected-warn-txt: #DAA60D;
-	--lineSelected-debug-txt: #f883ff;
+	--lineSelected-debug-txt: #F883FF;
 	--lineSelected-trace-txt: #444;
-	--lineSelected-info-txt: #44B109;
+	--lineSelected-info-txt: #44b109;
 	--lineSelected-keyword-green-txt: #44B109;
 	--lineSelected-keyword-red-txt: #FF3E3E;
 	--lineSelected-highlight-txt: #FFF;
@@ -152,7 +152,7 @@ html[data-theme="dark"] {
 	--lineSelected-highlight-error-bg: #FF3E3E;
 
 	--skipped-txt: #A2A2A2;
-	--skipped-bg: rgba(172, 172, 172, 0.23); /* #ACACAC3A */
+	--skipped-bg: #44453F;
 
 	--responsive-border-top: #666;
 
@@ -382,7 +382,7 @@ body {
 	font-weight: normal;
 }
 .log .line.evid .highlight {
-	color: (var(--errorLine-warnLine-highlight-txt));
+	color: var(--errorLine-warnLine-highlight-txt);
 	background-color: var(--errorLine-warnLine-highlight-bg);
 }
 
@@ -663,4 +663,5 @@ body {
 	background-color: var(--oddLineBG);
 }
 */
+
 
