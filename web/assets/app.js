@@ -295,7 +295,7 @@ window.App = (function app(window, document) {
       }
       // console.log('THEME RETRIEVED: ' + retrievedTheme);
 
-      let trans = () => {
+      const trans = () => {
         document.documentElement.classList.add('transition');
         window.setTimeout(() => {
             document.documentElement.classList.remove('transition')
