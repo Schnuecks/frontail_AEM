@@ -46,8 +46,7 @@
     " to(\\s.*)": "afterTo"
   },
   "lines": {
-    "/var/log/openhab/openhab.log": "line logLine",
-    "/var/log/openhab/events.log": "line logLine",
+    ".log": "line logLine",
     "model.script": "line evid modelLine",
     "ModelRepositoryImpl": "line evid modelLine",
     "ERROR": "line evid errorLine",
