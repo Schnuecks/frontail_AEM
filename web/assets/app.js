@@ -184,10 +184,11 @@ window.App = (function app(window, document) {
   var _highlightWord = function(line) {
     var output = line;
     var regex;
+    var regexG;
 
     if (_highlightConfig && _highlightConfig.words) {
       Object.keys(_highlightConfig.words).forEach((wordCheck) => {
-        output = output.replace(
+        output = output.replaceAll(
           wordCheck,
           '<span style="' + _highlightConfig.words[wordCheck] + '">' + wordCheck + '</span>',
         );
@@ -196,8 +197,9 @@ window.App = (function app(window, document) {
 // ----------- ADDED LINES FROM HERE ...  -----------
     if (_highlightConfig && _highlightConfig.wordsRegExClass) {
       Object.keys(_highlightConfig.wordsRegExClass).forEach((wordsRegExClassCheck) => {
-        output = output.replace(
-          new RegExp(wordsRegExClassCheck),
+        regexG = new RegExp(wordsRegExClassCheck, 'g');
+        output = output.replaceAll(
+          regexG,
           '<span class="' + _highlightConfig.wordsRegExClass[wordsRegExClassCheck] + '">$&</span>'
         );
       });
