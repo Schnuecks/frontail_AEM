@@ -3,8 +3,8 @@
 
 /* LIGHT THEME */
 html {
-	--bg: #EFEFEF;
-	--standard-txt: #666;
+	--bg: #F5F5F5;
+	--standard-txt: #888;
 
 	--navbar-bg: #DEDEDE;
 	--navbar-title-txt: #444;
@@ -85,7 +85,7 @@ html {
 
 	--responsive-border-top: #CCC;
 
-	--evenLineBG: #EFEFEF;
+	--evenLineBG: #F5F5F5;
 	--oddLineBG: #FFF;
 }
 
@@ -335,14 +335,11 @@ body {
 	border-radius: 3px;
 	display: inline-block;
 }
-.afterFrom,
-.afterTo {
+.marked {
 	color: var(--highlight-txt);
-	font-weight: bold;
 }
-.through,
-.become {
-	color: var(--highlight-txt);
+.noKeyword {
+	color: var(--standard-txt);
 	font-weight: normal;
 }
 
@@ -371,13 +368,11 @@ body {
 .log .line.evid .commandEvent {
 	color: var(--errorLine-warnLine-date-txt);
 }
-.log .line.evid .afterFrom,
-.log .line.evid .afterTo {
+.log .line.evid .marked {
 	color: var(--errorLine-warnLine-txt);
 	font-weight: bold;
 }
-.log .line.evid .through,
-.log .line.evid .become {
+.log .line.evid .noKeyword {
 	color: var(--errorLine-warnLine-txt);
 	font-weight: normal;
 }
@@ -412,10 +407,8 @@ body {
 .log .line.modelLine .highlight {
 	background-color: var(--modelLine-highlight-bg);
 }
-.log .line.modelLine .through,
-.log .line.modelLine .become,
-.log .line.modelLine .afterFrom,
-.log .line.modelLine .afterTo {
+.log .line.modelLine .noKeyword,
+.log .line.modelLine .marked {
 	color: var(--highlight-txt);
 }
 
@@ -447,10 +440,8 @@ body {
 	color: var(--debugLine-highlight-txt);
 	background-color: var(--debugLine-highlight-bg);
 }
-.log .line.debugLine .through,
-.log .line.debugLine .become,
-.log .line.debugLine .afterFrom,
-.log .line.debugLine .afterTo {
+.log .line.debugLine .noKeyword,
+.log .line.debugLine .marked {
 	color: var(--debugLine-highlight-txt);
 }
 
@@ -474,10 +465,8 @@ body {
 .log .line.evid.errorLine .red {
 	color: var(--errorLine-txt);
 }
-.log .line.evid.errorLine .afterFrom,
-.log .line.evid.errorLine .afterTo,
-.log .line.evid.errorLine .through,
-.log .line.evid.errorLine .become {
+.log .line.evid.errorLine .noKeyword,
+.log .line.evid.errorLine .marked {
 	color: var(--errorLine-txt);
 }
 
@@ -497,10 +486,8 @@ body {
 	color: var(--warnLine-highlight-txt);
 	background-color: var(--warnLine-highlight-bg);
 }
-.log .line.evid.warnLine .through,
-.log .line.evid.warnLine .become,
-.log .line.evid.warnLine .afterFrom,
-.log .line.evid.warnLine .afterTo {
+.log .line.evid.warnLine .noKeyword,
+.log .line.evid.warnLine .marked {
 	color: var(--warnLine-highlight-txt);
 }
 
@@ -604,13 +591,11 @@ body {
     color: var(--lineSelected-highlight-error-txt) !important;
     background-color: var(--lineSelected-highlight-error-bg) !important;
 }
-.log .line.line-selected .afterFrom,
-.log .line.line-selected .afterTo {
+.log .line.line-selected .marked {
 	color: var(--lineSelected-txt) !important;
 	font-weight: bold;
 }
-.log .line.line-selected .through,
-.log .line.line-selected .become {
+.log .line.line-selected .noKeyword {
 	color: var(--lineSelected-txt) !important;
 }
 
