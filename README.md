@@ -6,11 +6,11 @@ This is a fork from the [official Frontail](https://github.com/mthenw/frontail).
 
 ## Features
 
-* Ability to use Regular Expressions in the highlighting rules definition
-* Use of html classes (instead of inline css rules) to define the appearance in a separate css file
-* custom highlighting rules, intended for openHAB
-* New theming function, allowing to switch between light and dark mode in the same page (instead of having to choose among the two)
-* Use of HTML Web Storage API to remember the last used theme
+*   Ability to use Regular Expressions in the highlighting rules definition
+*   Use of html classes (instead of inline css rules) to define the appearance in a separate css file
+*   custom highlighting rules, intended for openHAB
+*   New theming function, allowing to switch between light and dark mode in the same page (instead of having to choose among the two)
+*   Use of HTML Web Storage API to remember the last used theme
 
 
 ## Look & Feel
@@ -23,7 +23,7 @@ This is a fork from the [official Frontail](https://github.com/mthenw/frontail).
 ## About
 
 It started as a personal modification on the Frontail installation in my openHABian, the full story is in the first post of this thread:
-https://community.openhab.org/t/frontail-custom-theme-coloring/116673
+<https://community.openhab.org/t/frontail-custom-theme-coloring/116673>
 
 Long story short, some modifications where made to the following files:
 ```
@@ -40,7 +40,6 @@ web/assets/styles/openhab_AEM.css
 
 ## Thanks
 
-Thanks to the work of [Ethan Dye](https://github.com/ecdye) this is also the standard Frontail version on [OpenHABian](https://github.com/openhab/openhabian) starting from version 1.6.4: you can install it using openhabian-config, menu 21.
+Thanks to the work of [Ethan Dye](https://github.com/ecdye) this is also the standard frontail version on [openHABian](https://github.com/openhab/openhabian) starting from version 1.6.4: you can install it using openhabian-config, menu 21.
 
 I would also like to thank [Schnuecks](https://github.com/Schnuecks) for helping me and giving some great suggestions. He also created a Repository for the installation via docker image, you can find it [here](https://github.com/Schnuecks/frontail).
-
