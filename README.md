@@ -37,9 +37,54 @@ preset/openhab_AEM.json
 web/assets/styles/openhab_AEM.css
 ```
 
+## Installation via docker image
+
+* image is multiarch for linux/amd64 linux/arm/v7 linux/arm64
+
+* edit docker-compose.yml
+
+```
+  frontail:
+    image: schnuecks/frontail-multi:latest
+    container_name: frontail
+    command: --disable-usage-stats --ui-highlight --ui-highlight-preset /frontail/preset/openhab_AEM.json -t openhab_AEM -l 5000 -n 100 /logs/openhab.log /logs/events.log
+    volumes:
+    - /opt/openhab/userdata/logs:/logs:ro
+    ports:
+    - "9001:9001"
+    restart: unless-stopped
+```
+
+* modify the volume and add your openhab userdata logs directory 
+* run it with `docker-compose up -d`
+* open http://127.0.0.1:9001
+
+
+## Installation via local build
+
+* `git clone https://github.com/Schnuecks/frontail_AEM.git`
+
+* edit docker-compose.yml
+
+```
+frontail:
+    container_name: frontail
+    build: ./frontail
+    command: --disable-usage-stats --ui-highlight --ui-highlight-preset /frontail/preset/openhab_AEM.json -t openhab_AEM -l 2000 -n 100 /logs/openhab.log /logs/events.log
+    volumes:
+    - /opt/openhab/userdata/logs:/logs:ro
+    ports:
+    - "9001:9001"
+    restart: unless-stopped
+```
+
+* modify build path where you cloned the repo
+* modify the volume and add your openhab userdata logs directory 
+* to build `docker-compose build` and run it with `docker-compose up -d`
+* open http://127.0.0.1:9001
 
 ## Thanks
 
 Thanks to the work of [Ethan Dye](https://github.com/ecdye) this is also the standard frontail version on [openHABian](https://github.com/openhab/openhabian) starting from version 1.6.4: you can install it using openhabian-config, menu 21.
 
-I would also like to thank [Schnuecks](https://github.com/Schnuecks) for helping me and giving some great suggestions. He also created a Repository for the installation via docker image, you can find it [here](https://github.com/Schnuecks/frontail).
+I would also like to thank [Schnuecks](https://github.com/Schnuecks) for helping me and giving some great suggestions. He also created a Repository for the installation via docker image, you can find it [here](https://github.com/Schnuecks/frontail_AEM).
