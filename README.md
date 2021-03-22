@@ -1,7 +1,8 @@
 # Frontail for openHAB
-## Streaming openHAB logs to the browser
 
-This is a fork from the [official Frontail](https://github.com/mthenw/frontail). It is intended to work especially with openHAB log files.
+This is a fork from the [official Frontail](https://github.com/mthenw/frontail). 
+Frontail is a Node.js application for streaming logs to the browser. It's a tail -F with UI.
+This version of Frontail is intended to work especially with openHAB log files, in particular regarding highlighting rules - but can be easily customized to work with any other log files, if using different rules in the json and css files.
 
 
 ## Features
