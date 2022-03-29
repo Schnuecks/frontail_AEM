@@ -1,85 +1,113 @@
 
+/* 2022-03-23 - Updated Coloring thanks to Grzegorz Miasko  */
+
+
 /* ============== COLORS ============= */
 
 /* LIGHT THEME */
-html {
+html { 
 	--bg: #F5F5F5;
-	--standard-txt: #888;
+	--standard-txt: #666;
 
-	--navbar-bg: #DEDEDE;
+	--navbar-bg: #CDE4FA;
 	--navbar-title-txt: #444;
 	--navbar-txt: #888;
+	--navbar-filter-bg: #FFF;
 	--navbar-filter-placeholder-txt: #CCC;
-	--navbar-filter-txt: #444;
-	--navbar-btn-bg: #CCC;
-	--navbar-btn-icon-fill: #666;
-	--navbar-btn-pause-pulse-bg: #BBB;
+	--navbar-filter-txt: #222;
+	--navbar-btn-bg: #FFF;
+	--navbar-btn-icon-fill: #888;
+	--navbar-btn-pause-pulse-bg: #FFF;
 
-	--null-label-bg: #FF6464;
-	--null-label-txt: #FFF;
-	--date-txt: #D370E4;
-	--info-txt: #00BE4B;
-	--origin-txt: #008BB5;
+	--null-label-bg: #F5F5F5;
+	--null-label-txt: #FF6464;
+	--date-bg: #FFEBFF;
+	--date-txt: #666;
+	--info-bg: #B9FFD7;
+	--info-txt: #666;
+	--origin-bg: #EBEBFF;
+	--origin-txt: #666;
+	--keyword-txt: #000;
 	--keyword-green-txt: #00BE4B;
 	--keyword-red-txt: #FF3E3E;
-	--highlight-txt: #222;
 	--highlight-bg: #CDE4FA;
+	--highlight-txt: #222;
+	--highlightModel-bg: #64FFFF;
+	--highlightThing-bg: #FFD2FF;
+	--highlightRule-bg: #FFFFB4;
 
 	--logLine-border-top: #CCC;
 
-	--errorLine-warnLine-date-txt: #816511;
-	--errorLine-warnLine-txt: #000;
-	--errorLine-warnLine-highlight-txt: #FFF;
-	--errorLine-warnLine-highlight-bg: #D4201F;
+	--evid-bg: #FF3E3E;
+	--evid-txt: #222;
+	--evid-date-origin-txt: #222;
+	--evid-date-origin-bg: #FF3E3E00;
+	--evid-highlight-txt: #222;
+	--evid-highlight-bg: #CDE4FA;
+
 	--errorLine-bg: #FF3E3E;
-	--errorLine-txt: #FFF;
-	--errorLine-date-origin-txt: #FBBFBE;
+	--errorLine-txt: #EEE;
+	--errorLine-date-origin-txt: #EEE;
+	--errorLine-date-origin-bg: #FF3E3E00;
+	--errorLine-highlightScript-txt: #FFF;
+	--errorLine-highlight-txt: #222;
+	--errorLine-highlight-bg: #CDE4FA;
 
 	--warnLine-bg: #FAC613;
 	--warnLine-txt: #222;
+	--warnLine-date-origin-bg: #FAC61300;
 	--warnLine-keyword-green-txt: #438300;
-	--warnLine-highlight-txt: #000;
-	--warnLine-highlight-bg: #FEEDBC;
+	--warnLine-highlight-txt: #222;
+	--warnLine-highlight-bg: #CDE4FA;
 
 	--modelLine-bg: #BAE2FF;
-	--modelLine-date-txt: #5D717F;
+	--modelLine-txt: #5D717F;
+	--modelLine-date-origin-bg: #BAE2FF00;
+	--modelLine-date-origin-txt: #5D717F;
 	--modelLine-info-txt: #019D2B;
 	--modelLine-keyword-green-txt: #019D2B;
-	--modelLine-highlight-bg: #E9f5FF;
+	--modelLine-highlight-txt: #222;
+	--modelLine-highlight-bg: #CDE4FA;
 
-	--debugLine-txt: #666;
-	--debugLine-bg: #FBCBFE;
-	--debugLine-type-txt: #E50BAE;
-	--debugLine-date-origin-txt: #7C667E;
-	--debugLine-info-txt: #019D2B;
+	--debugLine-bg: #FCCCFF;
+	--debugLine-txt: #444;
+	--debugLine-date-bg: #FFEBFF;
+	--debugLine-date-origin-txt: #444;
+	--debugLine-type-bg: #F5AFFF;
+	--debugLine-type-txt: #444;
+	--debugLine-origin-bg: #FCCCFF00;
 	--debugLine-keyword-green-txt: #019D2B;
+	--debugLine-highlight-bg: #CDE4FA;
 	--debugLine-highlight-txt: #222;
-	--debugLine-highlight-bg: #FEEDFF;
 
-	--traceLine-txt: #666;
 	--traceLine-bg: #DDD;
-	--traceLine-type-txt: #222;
-	--traceLine-highlight-txt: #000;
-	--traceLine-highlight-bg: #C1C1C1;
-	--traceLine-date-origin-txt: #999;
+	--traceLine-txt: #444;
+	--traceLine-date-bg: #FFEBFF;
+	--traceLine-date-origin-txt: #444;
+	--traceLine-type-bg: #B2DAFF;
+	--traceLine-type-txt: #444;
+	--traceLine-origin-bg: #DDD0;
+	--traceLine-highlight-bg: #CDE4FA;
+	--traceLine-highlight-txt: #222;
 
-	--lineSelected-txt: #FFF;
-	--lineSelected-bg: #232937;
+	--lineSelected-bg: #4F4F59;
+	--lineSelected-txt: #CCC;
 	--lineSelected-blink-bg: #8C95AA;
-	--lineSelected-date-txt: #F883FF;
-	--lineSelected-origin-txt: #4DCDF4;
+	--lineSelected-date-txt: #CCC;
+	--lineSelected-origin-txt: #CCC;
 	--lineSelected-error-txt: #FF5454;
 	--lineSelected-warn-txt: #FFC73C;
-	--lineSelected-debug-txt: #F883FF;
-	--lineSelected-trace-txt: #CCC;
-	--lineSelected-info-txt: #00BE4B;
+	--lineSelected-debug-txt: #F5AFFF;
+	--lineSelected-trace-txt: #FFF;
+	--lineSelected-info-txt: #00FF66;
+	--lineSelected-keyword-txt: #FFF;
 	--lineSelected-keyword-green-txt: #00BE4B;
 	--lineSelected-keyword-red-txt: #FF3E3E;
-	--lineSelected-highlight-txt: #000;
-	--lineSelected-highlight-bg: #AFDBFF;
-	--lineSelected-highlight-error-txt: #FFF;
-	--lineSelected-highlight-error-bg: #FF3E3E;
-
+	--lineSelected-highlight-bg: #CDE4FA;
+	--lineSelected-highlight-txt: #222;
+	--lineSelected-highlight-error-bg: #4F4F59;
+	--lineSelected-highlight-error-txt: #FF3E3E;
+	
 	--skipped-txt: #555;
 	--skipped-bg: #DDD;
 
@@ -91,65 +119,107 @@ html {
 
 /* DARK THEME */
 html[data-theme="dark"] {
-	--bg: #282922;
-	--standard-txt: #999;
-	--navbar-bg: #1A180F;
-	--navbar-title-txt: #AAA;
-	--navbar-txt: #626262;
-	--navbar-filter-placeholder-txt: #555;
-	--navbar-filter-txt: #999;
-	--navbar-btn-bg: #282922;
-	--navbar-btn-icon-fill: #666;
-	--navbar-btn-pause-pulse-bg: #333;
+	--bg: #222226;
+	--standard-txt: #BBB;
 
-	--null-label-bg: #FF6464;
-	--null-label-txt: #FFF;
-	--date-txt: #9C80FF;
-	--info-txt: #83FF00;
-	--origin-txt: #2FD1E6;
-	--keyword-green-txt: #9EEF49;
+	--navbar-bg: #E16611;
+	--navbar-title-txt: #FFF;
+	--navbar-txt: #EEE;
+	--navbar-filter-bg: #FFF;
+	--navbar-filter-placeholder-txt: #999;
+	--navbar-filter-txt: #222226;
+	--navbar-btn-bg: #FFF;
+	--navbar-btn-icon-fill: #999;
+	--navbar-btn-pause-pulse-bg: #CCC;
+
+	--null-label-bg: #222226;
+	--null-label-txt: #FF6464;
+	--date-bg: #003166;
+	--date-txt: #CCC;
+	--info-bg: #006450;
+	--info-txt: #CCC;
+	--origin-bg: #404047;
+	--origin-txt: #CCC;
+	--keyword-txt: #FFF;
+	--keyword-green-txt: #37ff64;
 	--keyword-red-txt: #FF3E3E;
 	--highlight-txt: #FFF;
-	--highlight-bg: #713151;
+	--highlight-bg: #0056B3;
+	--highlightModel-bg: #008C8C;
+	--highlightThing-bg: #800080;
+	--highlightRule-bg: #A62828;
 
 	--logLine-border-top: #555;
 
-	--errorLine-warnLine-date-txt: #8C7325;
-	--errorLine-warnLine-txt: #000;
-	--errorLine-warnLine-highlight-txt: #FFF;
-	--errorLine-warnLine-highlight-bg: #BD2E2E;
+	--evid-bg: #FF3E3E;
+	--evid-txt: #000;
+	--evid-date-origin-txt: #000;
+	--evid-date-origin-bg: #FF3E3E00;
+	--evid-highlight-txt: #FFF;
+	--evid-highlight-bg: #0056B3;
+
+	--errorLine-bg: #FF3E3E;
+	--errorLine-txt: #EEE;
+	--errorLine-date-origin-txt: #DDD;
+	--errorLine-date-origin-bg: #FF3E3E00;
+	--errorLine-highlightScript-txt: #FFF;
+	--errorLine-highlight-txt: #FFF;
+	--errorLine-highlight-bg: #0056B3;
+
+	--warnLine-bg: #FAC613;
+	--warnLine-txt: #222;
+	--warnLine-date-origin-bg: #FAC61300;
+	--warnLine-keyword-green-txt: #438300;
+	--warnLine-highlight-txt: #FFF;
+	--warnLine-highlight-bg: #0056B3;
 
 	--modelLine-bg: #035988;
-	--modelLine-date-txt: #AEC4D4;
-	--modelLine-info-txt: #78E900;
+	--modelLine-txt: #C7E0F2;
+	--modelLine-date-origin-txt: #C7E0F2;
+	--modelLine-date-origin-bg: #03598800;
+	--modelLine-info-txt: #C7E0F2;
 	--modelLine-keyword-green-txt: #78E900;
-	--modelLine-highlight-bg: #457AA0;
+	--modelLine-highlight-txt: #FFF;
+	--modelLine-highlight-bg: #0056B3;
 
-	--debugLine-txt: #222;
+	--debugLine-bg: #4B3D4D;
+	--debugLine-txt: #DDD;
+	--debugLine-date-bg: #003166;
+	--debugLine-date-origin-txt: #DDD;
+	--debugLine-type-bg: #800080;
+	--debugLine-type-txt: #DDD;
+	--debugLine-origin-bg: #4B3D4D00;
+	--debugLine-keyword-green-txt: #019D2B;
+	--debugLine-highlight-bg: #0056B3;
+	--debugLine-highlight-txt: #FFF;
 
-	--traceLine-txt: #CCC;
-	--traceLine-bg: #444;
-	--traceLine-type-txt: #FFF;
+	--traceLine-bg: #003E80;
+	--traceLine-txt: #DDD;
+	--traceLine-date-bg: #003166;
+	--traceLine-date-origin-txt: #DDD;
+	--traceLine-type-bg: #0056B3;
+	--traceLine-type-txt: #DDD;
+	--traceLine-origin-bg: #003E8000;
+	--traceLine-highlight-bg: #0056B3;
 	--traceLine-highlight-txt: #FFF;
-	--traceLine-highlight-bg: #696969;
-	--traceLine-date-origin-txt: #999;
 
-	--lineSelected-txt: #222;
+	--lineSelected-txt: #444;
 	--lineSelected-bg: #FFF;
 	--lineSelected-blink-bg: #2F2F2F;
-	--lineSelected-date-txt: #7D219F;
-	--lineSelected-origin-txt: #0596DB;
+	--lineSelected-date-txt: #444;
+	--lineSelected-origin-txt: #444;
 	--lineSelected-error-txt: #FF3E3E;
 	--lineSelected-warn-txt: #DAA60D;
-	--lineSelected-debug-txt: #F883FF;
-	--lineSelected-trace-txt: #444;
-	--lineSelected-info-txt: #44b109;
-	--lineSelected-keyword-green-txt: #44B109;
+	--lineSelected-debug-txt: #E50BAE;
+	--lineSelected-trace-txt: #003e80;
+	--lineSelected-info-txt: #2abf4a;
+	--lineSelected-keyword-txt: #000;
+	--lineSelected-keyword-green-txt: #2abf4a;
 	--lineSelected-keyword-red-txt: #FF3E3E;
 	--lineSelected-highlight-txt: #FFF;
-	--lineSelected-highlight-bg: #FF52A8;
-	--lineSelected-highlight-error-txt: #FFF;
-	--lineSelected-highlight-error-bg: #FF3E3E;
+	--lineSelected-highlight-bg: #007dff;
+	--lineSelected-highlight-error-txt: #FF3E3E;
+	--lineSelected-highlight-error-bg: #FFF;
 
 	--skipped-txt: #A2A2A2;
 	--skipped-bg: #44453F;
@@ -202,7 +272,7 @@ body {
 /* Filter Input field */
 .navbar input.form-control-sm {
 	color: var(--navbar-filter-txt);
-	background-color: var(--bg);
+	background-color: var(--navbar-filter-bg);
 	border: 0;
 }
 .navbar input::placeholder {
@@ -212,7 +282,7 @@ body {
 	color: var(--navbar-filter-txt);
 	box-shadow: none;
 	outline: 0;
-	background-color: var(--bg);
+	background-color: var(--navbar-filter-bg);
 }
 
 
@@ -241,7 +311,7 @@ body {
 }
 .navbar button.btn-sm #play,
 .navbar button.btn-sm #sun {
-	fill: var(--navbar-btn-icon-fill);
+	fill: var(--navbar-btn-icon-fill); 
 	opacity: 0;
 }
 .navbar button.btn-sm.play #play,
@@ -274,7 +344,7 @@ body {
 .log {
 	background: inherit;
 	border: 0;
-	font-size: 0.95em;
+	/*font-size: 0.95em;*/
 	padding: 0;
 	white-space: pre-wrap;
 }
@@ -283,10 +353,10 @@ body {
 	font-weight: normal;
 }
 .log .inner-line {
-	font-size: 0.85em;
-	line-height: 1.7em;
+	/*font-size: 0.85em;*/
+	line-height: 1.2em;
 	display: inline-block;
-	padding: 3px 15px;
+	padding: 1px 15px;
 	margin-left: 0 !important; /* serve important? */
 	text-indent: 0 !important; /* serve important? */
 	margin-bottom: 0;
@@ -300,43 +370,99 @@ body {
 
 /* ========== Classes applied by RegEx ========== */
 
-.commError,
-.null,
-.undef {
-	color: var(--null-label-txt);
-	background-color: var(--null-label-bg);
+.highlight.commError, 
+.highlight.null, 
+.highlight.undef {
+	color: var(--null-label-txt); 
+	background-color: var(--null-label-bg); 
+	font-weight: normal;
+	padding: 1px 3px;
+	border: 1px solid var(--null-label-txt);
+	border-radius: 3px;
+	display: inline-block;
 }
 .date {
 	color: var(--date-txt);
+	background-color: var(--date-bg);
+	font-weight: normal;
+	padding: 1px 3px;
+	border-radius: 3px;
+	display: inline-block;
 }
 .info {
 	color: var(--info-txt);
+	background-color: var(--info-bg);
+	font-weight: normal;
+	padding: 1px 3px;
+	border-radius: 3px;
+	display: inline-block;
 }
-.origin,
-.itemChangedEvent,
-.thingChangedEvent,
+.type {
+	font-weight: normal;
+	padding: 1px 3px;
+	border-radius: 3px;
+	display: inline-block;
+}
+.origin, 
+.itemChangedEvent, 
+.thingChangedEvent, 
 .commandEvent {
 	color: var(--origin-txt);
+	font-style: italic;
+	background-color: var(--origin-bg);
+	font-weight: normal;
+	padding: 1px 3px;
+	border-radius: 3px;
+	display: inline-block;
 }
 .keyword {
 	font-weight: bold;
 }
 .keyword.green {
-	color: var(--keyword-green-txt);
+	color: var(--keyword-green-txt); 
 }
 .keyword.red {
-	color: var(--keyword-red-txt);
+	color: var(--keyword-red-txt); 
 }
 .highlight {
 	color: var(--highlight-txt);
 	background-color: var(--highlight-bg);
 	font-weight: normal;
-	padding: 0px 3px;
+	padding: 1px 3px;
 	border-radius: 3px;
 	display: inline-block;
 }
-.marked {
+.highlightModel {
 	color: var(--highlight-txt);
+	background-color: var(--highlightModel-bg);
+	font-weight: normal;
+	padding: 1px 3px;
+	border-radius: 3px;
+	display: inline-block;
+}
+.highlightThing {
+	color: var(--highlight-txt);
+	background-color: var(--highlightThing-bg);
+	font-weight: normal;
+	padding: 1px 3px;
+	border-radius: 3px;
+	display: inline-block;
+}
+.highlightRule {
+	color: var(--highlight-txt);
+	background-color: var(--highlightRule-bg);
+	font-weight: normal;
+	padding: 1px 3px;
+	border-radius: 3px;
+	display: inline-block;
+}
+.highlightScript {
+	color: var(--highlight-txt);
+	font-weight: normal;
+	display: inline-block;
+}
+.marked {
+	color: var(--keyword-txt);
 }
 .noKeyword {
 	color: var(--standard-txt);
@@ -349,54 +475,62 @@ body {
 
 /* .logLine */
 .log .line.logLine {
-	text-align: right;
-	border-top: 1px solid var(--logLine-border-top);
+	text-align: right; 
+	border-top: 1px solid var(--logLine-border-top); 
 	color: var(--standard-txt);
 }
 
 
 /* .evid (.errorLine + .warnLine) */
 .log .line.evid {
-	padding: 5px 0;
-	margin: 6px 0 6px 0;
+	padding: 5px 0; 
+	margin: 6px 0 6px 0; 
 	border-radius: 5px;
 }
-.log .line.evid .date,
+.log .line.evid .date {
+	color: var(--evid-date-origin-txt);
+	background-color: var(--evid-date-origin-bg); 
+}
 .log .line.evid .origin,
-.log .line.evid .itemChangedEvent,
-.log .line.evid .thingChangedEvent,
+.log .line.evid .itemChangedEvent, 
+.log .line.evid .thingChangedEvent, 
 .log .line.evid .commandEvent {
-	color: var(--errorLine-warnLine-date-txt);
+	color: var(--evid-date-origin-txt);
+	background-color: var(--evid-date-origin-bg); 
+	font-style: italic;
+}
+.log .line.evid .highlight {
+	color: var(--evid-highlight-txt);
+	background-color: var(--evid-highlight-bg);
 }
 .log .line.evid .marked {
-	color: var(--errorLine-warnLine-txt);
+	color: var(--evid-txt);
 	font-weight: bold;
 }
 .log .line.evid .noKeyword {
-	color: var(--errorLine-warnLine-txt);
+	color: var(--evid-txt);
 	font-weight: normal;
-}
-.log .line.evid .highlight {
-	color: var(--errorLine-warnLine-highlight-txt);
-	background-color: var(--errorLine-warnLine-highlight-bg);
 }
 
 
 /* .modelLine */
 .log .line.modelLine {
-	color: var(--highlight-txt);
-	background-color: var(--modelLine-bg);
+	color: var(--modelLine-txt);
+	background-color: var(--modelLine-bg); 
 	border-radius: 5px;
 	margin: 5px 0;
 }
 .log .line.modelLine .date {
-	color: var(--modelLine-date-txt);
+	color: var(--modelLine-date-origin-txt);
+	background-color: var(--modelLine-date-origin-bg); 
 }
 .log .line.modelLine .origin,
-.log .line.evid .itemChangedEvent,
-.log .line.evid .thingChangedEvent,
+.log .line.evid .itemChangedEvent, 
+.log .line.evid .thingChangedEvent, 
 .log .line.evid .commandEvent {
-	color: var(--origin-txt);
+	color: var(--modelLine-date-origin-txt);
+	background-color: var(--modelLine-date-origin-bg); 
+	font-style: italic;
 }
 .log .line.modelLine .info {
 	color: var(--modelLine-info-txt);
@@ -405,33 +539,37 @@ body {
 	color: var(--modelLine-keyword-green-txt);
 }
 .log .line.modelLine .highlight {
+	color: var(--modelLine-highlight-txt);
 	background-color: var(--modelLine-highlight-bg);
 }
 .log .line.modelLine .noKeyword,
 .log .line.modelLine .marked {
-	color: var(--highlight-txt);
+	color: var(--modelLine-txt);
 }
 
 
 /* .debugLine */
 .log .line.debugLine {
-	color: var(--debugLine-txt);
-	background-color: var(--debugLine-bg);
+	color: var(--debugLine-txt); 
+	background-color: var(--debugLine-bg); 
 	border-radius: 5px;
-	margin: 5px 0;
+	margin: 1px 0;
 }
 .log .line.debugLine .type {
 	color: var(--debugLine-type-txt);
+	background-color: var(--debugLine-type-bg);
 }
-.log .line.debugLine .date,
+.log .line.debugLine .date {
+	color: var(--debugLine-date-origin-txt);
+	background-color: var(--debugLine-date-bg); 
+}
 .log .line.debugLine .origin,
-.log .line.debugLine .itemChangedEvent,
-.log .line.debugLine .thingChangedEvent,
+.log .line.debugLine .itemChangedEvent, 
+.log .line.debugLine .thingChangedEvent, 
 .log .line.debugLine .commandEvent {
 	color: var(--debugLine-date-origin-txt);
-}
-.log .line.debugLine .info {
-	color: var(--debugLine-info-txt);
+	background-color: var(--debugLine-origin-bg);
+	font-style: normal;
 }
 .log .line.debugLine .green {
 	color: var(--debugLine-keyword-green-txt);
@@ -442,39 +580,63 @@ body {
 }
 .log .line.debugLine .noKeyword,
 .log .line.debugLine .marked {
-	color: var(--debugLine-highlight-txt);
+	color: var(--debugLine-txt);
 }
 
 
 /* .errorLine */
-.log .line.errorLine {
-	color: var(--errorLine-txt);
+.log .line.errorLine { 
+	color: var(--errorLine-txt); 
 	background-color: var(--errorLine-bg);
 }
 .log .line.evid.errorLine .type {
 	color: var(--errorLine-txt);
 }
-.log .line.evid.errorLine .date,
+.log .line.evid.errorLine .date{
+	color: var(--errorLine-date-origin-txt);
+	background-color: var(--errorLine-date-origin-bg); 
+}
 .log .line.evid.errorLine .origin,
-.log .line.evid.errorLine .itemChangedEvent,
-.log .line.evid.errorLine .thingChangedEvent,
+.log .line.evid.errorLine .itemChangedEvent, 
+.log .line.evid.errorLine .thingChangedEvent, 
 .log .line.evid.errorLine .commandEvent {
 	color: var(--errorLine-date-origin-txt);
+	background-color: var(--errorLine-date-origin-bg); 
+	font-style: italic;
 }
-.log .line.evid.errorLine .green,
+.log .line.evid.errorLine .highlightScript {
+	color: var(--errorLine-highlightScript-txt);
+}
+.log .line.evid.errorLine .green, 
 .log .line.evid.errorLine .red {
-	color: var(--errorLine-txt);
+	color: var(--errorLine-highlight-txt);
+}
+.log .line.evid.errorLine .highlight {
+	color: var(--errorLine-highlight-txt);
+	background-color: var(--errorLine-highlight-bg);
 }
 .log .line.evid.errorLine .noKeyword,
 .log .line.evid.errorLine .marked {
-	color: var(--errorLine-txt);
+		color: var(--errorLine-txt);
 }
 
 
 /* warnLine */
 .log .line.warnLine {
 	color: var(--warnLine-txt);
-	background-color: var(--warnLine-bg);
+	background-color: var(--warnLine-bg); 
+}
+.log .line.warnLine .date {
+	color: var(--warnLine-date-origin-txt);
+	background-color: var(--warnLine-date-origin-bg); 
+}
+.log .line.warnLine .origin,
+.log .line.warnLine .itemChangedEvent, 
+.log .line.warnLine .thingChangedEvent, 
+.log .line.warnLine .commandEvent {
+	color: var(--warnLine-date-origin-txt);
+	background-color: var(--warnLine-date-origin-bg); 
+	font-style: italic;
 }
 .log .line.evid.warnLine .type {
 	color: var(--warnLine-txt);
@@ -488,7 +650,7 @@ body {
 }
 .log .line.evid.warnLine .noKeyword,
 .log .line.evid.warnLine .marked {
-	color: var(--warnLine-highlight-txt);
+	color: var(--warnLine-txt);
 }
 
 
@@ -497,21 +659,31 @@ body {
 	color: var(--traceLine-txt);
 	background-color: var(--traceLine-bg);
 	border-radius: 5px;
-	margin: 5px 0;
+	margin: 1px 0;
 }
-.log .line.evid.traceLine .type {
+.log .line.traceLine .type {
 	color: var(--traceLine-type-txt);
+	background-color: var(--traceLine-type-bg);
+}
+.log .line.traceLine .date {
+	color: var(--traceLine-date-origin-txt);
+	background-color: var(--traceLine-date-bg); 
+}
+.log .line.traceLine .origin,
+.log .line.traceLine .itemChangedEvent, 
+.log .line.traceLine .thingChangedEvent, 
+.log .line.traceLine .commandEvent {
+	color: var(--traceLine-date-origin-txt);
+	background-color: var(--traceLine-origin-bg); 
+	font-style: normal;
 }
 .log .line.traceLine .highlight {
 	color: var(--traceLine-highlight-txt);
 	background-color: var(--traceLine-highlight-bg);
 }
-.log .line.traceLine .date,
-.log .line.traceLine .origin,
-.log .line.traceLine .itemChangedEvent,
-.log .line.traceLine .thingChangedEvent,
-.log .line.traceLine .commandEvent {
-	color: var(--traceLine-date-origin-txt);
+.log .line.evid.traceLine .noKeyword,
+.log .line.evid.traceLine .marked {
+	color: var(--traceLine-txt);
 }
 
 
@@ -525,7 +697,7 @@ body {
 	background-color: var(--skipped-bg);
 	border-radius: 5px;
 	padding: 4px 10px;
-    margin: 10px 0;
+	margin: 10px 0;
 	animation: blinkingSkipped 1s infinite;
 }
 @keyframes blinkingSkipped {
@@ -553,46 +725,53 @@ body {
 }
 .log .line.line-selected .date {
 	color: var(--lineSelected-date-txt) !important;
+	background-color: var(--lineSelected-bg) !important;
 }
 .log .line.line-selected .origin,
-.log .line.line-selected .itemChangedEvent,
-.log .line.line-selected .thingChangedEvent,
+.log .line.line-selected .itemChangedEvent, 
+.log .line.line-selected .thingChangedEvent, 
 .log .line.line-selected .commandEvent {
 	color: var(--lineSelected-origin-txt) !important;
+	background-color: var(--lineSelected-bg) !important;
 }
 .log .line.line-selected .error {
 	color: var(--lineSelected-error-txt) !important;
+	background-color: var(--lineSelected-bg) !important;
 }
 .log .line.line-selected .warn {
 	color: var(--lineSelected-warn-txt) !important;
+	background-color: var(--lineSelected-bg) !important;
 }
 .log .line.line-selected .debug {
 	color: var(--lineSelected-debug-txt) !important;
+	background-color: var(--lineSelected-bg) !important;
 }
 .log .line.line-selected .trace {
 	color: var(--lineSelected-trace-txt) !important;
+	background-color: var(--lineSelected-bg) !important;
 }
 .log .line.line-selected .info {
 	color: var(--lineSelected-info-txt) !important;
+	background-color: var(--lineSelected-bg) !important;
 }
 .log .line.line-selected .green {
 	color: var(--lineSelected-keyword-green-txt) !important;
 }
 .log .line.line-selected .red {
-	color: var(--lineSelected-keyword-red-txt) !important;
+	color: var(--lineSelected-keyword-red-txt) !important; 
 }
 .log .line.line-selected .highlight {
 	color: var(--lineSelected-highlight-txt) !important;
 	background-color: var(--lineSelected-highlight-bg) !important;
 }
-.log .line.line-selected .highlight.commError,
-.log .line.line-selected .highlight.null,
+.log .line.line-selected .highlight.commError, 
+.log .line.line-selected .highlight.null, 
 .log .line.line-selected .highlight.undef {
     color: var(--lineSelected-highlight-error-txt) !important;
     background-color: var(--lineSelected-highlight-error-bg) !important;
 }
 .log .line.line-selected .marked {
-	color: var(--lineSelected-txt) !important;
+	color: var(--lineSelected-keyword-txt) !important;
 	font-weight: bold;
 }
 .log .line.line-selected .noKeyword {
@@ -604,11 +783,11 @@ body {
 /* ========== Media Queries ========== */
 
 @media screen and (max-width: 768px) {
-	.log .line {
+	.log .line {		
 		padding: 3px 0 7px 0;
 		border-top: 1px solid var(--responsive-border-top);
 	}
-	.log .line.line-selected {
+	.log .line.line-selected {		
 		border-top: 1px solid var(--lineSelected-bg);
 	}
 	.log .inner-line {
@@ -619,7 +798,7 @@ body {
 	.log .line.debugLine,
 	.log .line.traceLine,
 	.log .line.evid,
-	.log .line.evid.line-selected {
+	.log .line.evid.line-selected {		
 		border-top: 0;
 	}
 	.log .line.logLine {
@@ -648,3 +827,5 @@ body {
 	background-color: var(--oddLineBG);
 }
 */
+
+

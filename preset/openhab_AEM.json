@@ -7,6 +7,10 @@
     "\\[ItemCommandEvent          \\]": "commandEvent",
     "\\[ome.event.ItemCommandEvent\\]": "commandEvent",
     "\\(COMMUNICATION_ERROR\\)": "highlight commError",
+    "\\(HANDLER_MISSING_ERROR\\)": "highlight commError",
+    "\\(CONFIGURATION_PENDING\\)": "highlight commError",
+    "\\(DISABLED\\)": "highlight commError",
+    "\\(BRIDGE_OFFLINE\\)": "highlight commError",
     "Null": "highlight null",
     "Undef": "highlight undef",
     "\\[ERROR\\]": "type error",
@@ -18,6 +22,7 @@
     "\\sfrom\\s(\\S*)": "afterFrom marked",
     "\\sto\\s(\\S*)": "afterTo marked",
     "\\s°C": "degrees marked",
+    "\\s°": "degrees marked",
     "\\s%": "percent marked",
     "\\sON\\b": "keyword green on",
     "\\sONLINE\\b": "keyword green online",
@@ -41,13 +46,29 @@
     "\\[(\\S*?).core.(.*?)\\]": "origin",
     "\\[(\\S*?).communication.(.*?)\\]": "origin",
     "\\[(\\S*?).event.(.*?)\\]": "origin",
+    "\\[(\\S*?).internal.(.*?)\\]": "origin",
+    "\\[(\\S*?).loader.(.*?)\\]": "origin",
+    "\\[(\\S*?).util.(.*?)\\]": "origin",
+    "\\[(\\S*?).thing.(.*?)\\]": "origin",
+    "\\[(\\S*?).action.(.*?)\\]": "origin",
+    "\\[(\\S*?).impl.(.*?)\\]": "origin",
+    "\\[(\\S*?).apache.(.*?)\\]": "origin",
+    "\\[(\\S*?).activator.(.*?)\\]": "origin",
+    "\\[(\\S*?).ops4j.(.*?)\\]": "origin",
+    "\\[(\\S*?).jetty.(.*?)\\]": "origin",
+    "\\[(\\S*?).kar.(.*?)\\]": "origin",
+    "\\[(\\S*?).NamespaceHandlerRegisterer(.*?)\\]": "origin",
     "SKIPPED: (\\d*)": "skippedCount"
   },
   "wordsRegExMatchClass": {
     "Item '(.*?)'": "highlight",
-    "model '(.*?)'": "highlight",
+    "model '(.*?)'": "highlightModel",
     "through (.*)": "highlight",
-    "through</span> (.*)": "highlight"
+    "through</span> (.*)": "highlight",
+    "Thing '(.*?)'": "highlightThing",
+    "rule '(.*?)'": "highlightRule",
+    "script '(.*?)'": "highlightScript",
+    "file (.*)": "highlightScript"
   },
   "lines": {
     ".log": "line logLine",
@@ -58,6 +79,7 @@
     "WARN": "line evid warnLine",
     "DEBUG": "line debugLine",
     "TRACE": "line traceLine",
-    "SKIPPED": "line skippedCountLine"
+    "SKIPPED": "line skippedCountLine",
+    "INFO": "line"
   }
 }
