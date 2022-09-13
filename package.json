@@ -24,7 +24,7 @@
     "socket.io": "3.1.2",
     "universal-analytics": "0.4.23",
     "untildify": "3.0.2",
-    "uuid": "3.3.2"
+    "uuid": "3.4.0"
   },
   "devDependencies": {
     "eslint": "~6.8.0",
