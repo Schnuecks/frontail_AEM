@@ -11,7 +11,7 @@
     "basic-auth-connect": "1.0.0",
     "byline": "5.0.0",
     "command-exists": "1.2.8",
-    "commander": "3.0.1",
+    "commander": "3.0.2",
     "configstore": "4.0.0",
     "connect": "3.7.0",
     "cookie": "0.1.0",
