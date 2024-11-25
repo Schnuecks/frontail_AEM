@@ -19,6 +19,57 @@ This is a fork from the [official Frontail](https://github.com/mthenw/frontail).
 
 ![Dark Theme](https://community-openhab-org.s3.dualstack.eu-central-1.amazonaws.com/optimized/3X/f/c/fcaebc3ca9cb3f182d8d59ef3aa5f322a6fd9a55_2_690x460.jpeg)
 
+## Installation
+> **Note**
+> It can be that the paths differ with you, depending on the system version.  Please adjust accordingly.
+
+We install the necessary applications:
+```
+sudo apt-get install nodejs
+sudo apt-get install npm
+```
+
+Then the frontail itself:
+```
+sudo npm i frontail -g
+```
+Get (linux-specific) frontail installation folder:
+```
+echo "$(npm list -g | head -n 1)/node_modules/frontail"
+```
+### Copy modified files to frontail
+Copy modified files from this repo to the frontail installations dir, i.e.: ```/usr/lib/node_modules/frontail/```
+
+### Let's create a new system service:
+```
+cd /etc/systemd/system/
+sudo nano frontail.service
+```
+And in the editor that opens, paste the following script:
+```
+#!/bin/sh -
+
+[Unit]
+Description=Frontail
+
+[Service]
+ExecStart=/usr/lib/node_modules/frontail/bin/frontail --disable-usage-stats --ui-highlight --ui-highlight-preset /usr/lib/node_modules/frontail/preset/openhab_AEM.json --theme openhab_AEM --lines 2000 --number 200 /var/log/openhab/openhab.log /var/log/openhab/events.log /var/log/openhab/zwave.log
+Restart=always
+User=openhab
+Group=openhab
+
+[Install]
+WantedBy=multi-user.target
+Alias=frontail.service
+```
+You may need to change the User and Group values ​​to those that openHab runs under on your system. Save and then run the following commands:
+```
+sudo chmod 644 /etc/systemd/system/frontail.service
+sudo systemctl daemon-reload
+sudo systemctl enable frontail.service
+sudo systemctl start frontail.service
+```
+If everything is done correctly, then by going to http://<server_addres>:9001 in the browser we will see the treasured logs.
 
 ## About
 
